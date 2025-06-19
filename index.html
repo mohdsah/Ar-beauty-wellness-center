@@ -309,6 +309,45 @@
     .staff-card p {
       color: #555;
       font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .staff-social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .staff-social-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      color: white;
+      text-decoration: none;
+      border-radius: 50%;
+      font-size: 16px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .tiktok-button {
+      background: #000000;
+    }
+
+    .instagram-button {
+      background: #E1306C;
+    }
+
+    .tiktok-button:hover {
+      background: #333333;
+      transform: scale(1.1);
+    }
+
+    .instagram-button:hover {
+      background: #C13584;
+      transform: scale(1.1);
     }
 
     .carousel-nav {
@@ -567,6 +606,16 @@
         max-width: 300px;
       }
 
+      .staff-social-buttons {
+        gap: 8px;
+      }
+
+      .staff-social-button {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+      }
+
       .social-buttons {
         flex-direction: column;
       }
@@ -691,16 +740,28 @@
           <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Aisyah, Pakar Facial AR Beauty" title="Aisyah - Pakar Facial">
           <h4>Aisyah</h4>
           <p>Pakar facial dengan 5 tahun pengalaman dalam rawatan kulit.</p>
+          <div class="staff-social-buttons">
+            <a href="https://tiktok.com/@aisyah_arbeauty" class="staff-social-button tiktok-button" aria-label="TikTok Aisyah" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://instagram.com/aisyah_arbeauty" class="staff-social-button instagram-button" aria-label="Instagram Aisyah" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
         <div class="staff-card">
           <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Nur, Terapis Urutan AR Beauty" title="Nur - Terapis Urutan">
           <h4>Nur</h4>
           <p>Terapis urutan tradisional dan aromaterapi.</p>
+          <div class="staff-social-buttons">
+            <a href="https://tiktok.com/@nur_arbeauty" class="staff-social-button tiktok-button" aria-label="TikTok Nur" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://instagram.com/nur_arbeauty" class="staff-social-button instagram-button" aria-label="Instagram Nur" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
         <div class="staff-card">
           <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Sofia, Spesialis Kuku AR Beauty" title="Sofia - Spesialis Kuku">
           <h4>Sofia</h4>
           <p>Spesialis rawatan kuku dan relaksasi.</p>
+          <div class="staff-social-buttons">
+            <a href="https://tiktok.com/@sofia_arbeauty" class="staff-social-button tiktok-button" aria-label="TikTok Sofia" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://instagram.com/sofia_arbeauty" class="staff-social-button instagram-button" aria-label="Instagram Sofia" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
       </div>
       <div class="carousel-nav">
