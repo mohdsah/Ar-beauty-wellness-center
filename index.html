@@ -3,7 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AR Beauty & Wellness Center</title>
+  <meta name="description" content="AR Beauty & Wellness Center menawarkan spa premium, rawatan kecantikan, dan produk penjagaan kulit di Malaysia. Tempah temu janji anda sekarang!">
+  <meta name="keywords" content="spa premium Malaysia, rawatan kecantikan, penjagaan kulit, facial eksklusif, urutan tradisional, AR Beauty">
+  <meta name="author" content="AR Beauty & Wellness Center">
+  <meta name="robots" content="index, follow">
+  <!-- Open Graph untuk Media Sosial -->
+  <meta property="og:title" content="AR Beauty & Wellness Center - Spa Premium di Malaysia">
+  <meta property="og:description" content="Nikmati rawatan spa eksklusif dan produk kecantikan premium di AR Beauty. Hubungi +6014-3862897 untuk tempahan!">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
+  <meta property="og:url" content="https://www.arbeautywellness.com">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AR Beauty & Wellness Center - Spa Premium di Malaysia">
+  <meta name="twitter:description" content="Nikmati rawatan spa eksklusif dan produk kecantikan premium. Hubungi +6014-3862897!">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://www.arbeautywellness.com">
+  <title>AR Beauty & Wellness Center - Spa Premium & Rawatan Kecantikan Malaysia</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
@@ -148,7 +165,7 @@
       background: #4682b4;
       position: absolute;
       bottom: -8px;
-      left: ;
+      left: 0;
     }
 
     .section p, .section ul li {
@@ -162,7 +179,7 @@
     }
 
     .section ul li::before {
-      content: '✩';
+      content: '✨';
       margin-right: 8px;
       color: #4682b4;
     }
@@ -209,7 +226,7 @@
     }
 
     .product-card p {
-      color: #666;
+      color: #555;
       font-size: 14px;
       margin-bottom: 12px;
     }
@@ -225,7 +242,7 @@
       display: inline-block;
       padding: 10px 22px;
       background: #4682b4;
-      color: #fff;
+      color: white;
       text-decoration: none;
       border-radius: 25px;
       font-size: 15px;
@@ -290,7 +307,7 @@
     }
 
     .staff-card p {
-      color: #666;
+      color: #555;
       font-size: 14px;
     }
 
@@ -306,7 +323,7 @@
 
     .carousel-nav button {
       background: #4682b4;
-      color: #fff;
+      color: white;
       border: none;
       width: 35px;
       height: 35px;
@@ -362,7 +379,7 @@
       font-size: 15px;
       border: 1px solid #dfe9f3;
       border-radius: 8px;
-      background: #fff;
+      background: #f9fafc;
       transition: border-color 0.3s ease;
     }
 
@@ -375,7 +392,7 @@
     .appointment-form button {
       padding: 12px;
       background: #4682b4;
-      color: #fff;
+      color: white;
       border: none;
       border-radius: 25px;
       font-size: 16px;
@@ -384,7 +401,7 @@
       transition: background 0.3s ease, transform 0.3s ease;
     }
 
-    .appointment-form .form-button:hover {
+    .appointment-form button:hover {
       background: #3a6b9a;
       transform: scale(1.05);
     }
@@ -393,20 +410,20 @@
     .social-buttons {
       display: flex;
       flex-wrap: wrap;
-      gap: 15px;
+      gap: 12px;
       margin-top: 25px;
       justify-content: center;
     }
 
     .social-button {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       padding: 12px 28px;
-      color: #fff;
+      color: white;
       text-decoration: none;
       border-radius: 30px;
       font-weight: 500;
-      font-size: 15px;
+      font-size: 16px;
       transition: background 0.3s ease, transform 0.3s ease;
     }
 
@@ -415,7 +432,7 @@
     }
 
     .facebook-button {
-      background: #344e86;
+      background: #3b5998;
     }
 
     .map-button {
@@ -428,12 +445,12 @@
     }
 
     .whatsapp-button:hover {
-      background: #1ebea5;
+      background: #1ebe57;
       transform: scale(1.08);
     }
 
     .facebook-button:hover {
-      background: #2f4373;
+      background: #344e86;
       transform: scale(1.08);
     }
 
@@ -451,7 +468,7 @@
       background: #fff;
       border-top: 1px solid #dfe9f3;
       justify-content: space-around;
-      padding: 10px;
+      padding: 10px 0;
       box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.06);
       z-index: 999;
     }
@@ -471,17 +488,17 @@
     /* Footer */
     .footer {
       text-align: center;
-      padding: 25px;
+      padding: 25px 20px;
       font-size: 14px;
       color: #666;
       margin-bottom: 80px;
       background: #f0f6fa;
     }
 
-    /* Responsive Design */
+    /* Responsif */
     @media (max-width: 768px) {
       .hero-section h2 {
-        font-size: 28px;
+        font-size: 30px;
       }
 
       .hero-section p {
@@ -519,11 +536,11 @@
       }
 
       .hero-section {
-        padding: 60px 10px;
+        padding: 60px 15px;
       }
 
       .hero-section h2 {
-        font-size: 24px;
+        font-size: 26px;
       }
 
       .hero-section p {
@@ -538,7 +555,7 @@
         grid-template-columns: 1fr;
       }
 
-      .product-card img {
+      .product-card img, .staff-card img {
         height: 120px;
       }
 
@@ -550,22 +567,18 @@
         max-width: 300px;
       }
 
-      .staff-card img {
-        width: 100px;
-        height: 100px;
-      }
-
       .social-buttons {
         flex-direction: column;
       }
 
       .social-button {
         width: 100%;
-        padding: 10px;
+        justify-content: center;
+        padding: 10px 20px;
       }
 
       .bottom-nav a {
-        font-size: 20px;
+        font-size: 22px;
       }
 
       .appointment-form {
@@ -575,151 +588,185 @@
   </style>
 </head>
 <body>
+  <!-- Struktur Data Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AR Beauty & Wellness Center",
+    "description": "Spa premium dan rawatan kecantikan di Malaysia, menawarkan facial eksklusif, urutan tradisional, dan produk penjagaan kulit.",
+    "telephone": "+6014-3862897",
+    "url": "https://www.arbeautywellness.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jalan Contoh 123",
+      "addressLocality": "Kuala Lumpur",
+      "addressCountry": "Malaysia"
+    },
+    "sameAs": [
+      "https://facebook.com/arbeautywellness",
+      "https://wa.me/60143862897",
+      "https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8"
+    ],
+    "openingHours": [
+      "Mo-Sa 10:00-20:00",
+      "Su 12:00-18:00"
+    ]
+  }
+  </script>
+
   <header class="mobile-header">
-    <h1>AR Rahman Beauty</h1>
-    <div class="menu-icon"><i class="fas fa-bars"></i></div>
+    <h1>AR Beauty & Wellness</h1>
+    <div class="menu-icon" aria-label="Buka Menu"><i class="fas fa-bars"></i></div>
   </header>
 
-  <div class="sidebar" id="sidebar-menu">
+  <nav class="sidebar" id="sidebar">
     <ul>
-      <li><a href="#home">Laman Utama</a></li>
-      <li><a href="#services">Servis</a></li>
-      <li><a href="#products">Produk</a></li>
-      <li><a href="#videos">Video</a></li>
-      <li><a href="#staff">Staf</a></li>
-      <li><a href="#about">Tentang Kami</a></li>
-      <li><a href="#appointment">Tempah</a></li>
-      <li><a href="#book">Hubungi</a></li>
+      <li><a href="#home" title="Laman Utama Spa">Laman Utama</a></li>
+      <li><a href="#services" title="Perkhidmatan Spa dan Kecantikan">Perkhidmatan</a></li>
+      <li><a href="#products" title="Produk Penjagaan Kulit">Produk</a></li>
+      <li><a href="#videos" title="Video Kecantikan">Video</a></li>
+      <li><a href="#staff" title="Pasukan Staf Profesional">Staf</a></li>
+      <li><a href="#about" title="Tentang AR Beauty">Tentang Kami</a></li>
+      <li><a href="#appointment" title="Tempah Temu Janji Spa">Tempah Temu Janji</a></li>
+      <li><a href="#book" title="Hubungi Kami">Hubungi</a></li>
     </ul>
-  </div>
+  </nav>
 
-  <div class="hero-section">
-    <h2>Spa Premium, Sentuhan Elegan</h2>
-    <p>Kecantikan dan ketenangan di hujung jari anda.</p>
-    <a href="#book" class="social-button whatsapp-button"><i class="fab fa-whatsapp"></i> Hubungi Sekarang</a>
-  </div>
+  <section class="hero-section">
+    <h2>Spa Premium & Rawatan Kecantikan Eksklusif</h2>
+    <p>Nikmati pengalaman kecantikan dan ketenangan terbaik di Malaysia.</p>
+    <a href="#book" class="social-button whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> Tempah Sekarang</a>
+  </section>
 
-  <div id="home" class="section">
-    <h3>Servis Kami</h3>
+  <section id="home" class="section">
+    <h3>Perkhidmatan Spa Kami</h3>
     <ul>
-      <li>Facial & Spa Eksklusif</li>
+      <li>Facial Eksklusif & Spa</li>
       <li>Urutan Tradisional & Aromaterapi</li>
-      <li>Rawatan Kecantikan</li>
+      <li>Rawatan Kulit dan Relaksasi</li>
     </ul>
-  </div>
+  </section>
 
-  <div id="products" class="section">
-    <h3>Produk Kami</h3>
-    <p>Temui produk kecantikan premium untuk penjagaan harian anda.</p>
+  <section id="products" class="section">
+    <h3>Produk Penjagaan Kulit Premium</h3>
+    <p>Temui rangkaian produk kecantikan kami untuk kulit berseri.</p>
     <div class="product-grid">
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=60" alt="Serum Mencerahkan">
+        <img src="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Serum Mencerahkan untuk Kulit Berseri" title="Serum Mencerahkan AR Beauty">
         <h4>Serum Mencerahkan</h4>
-        <p>Serum dengan vitamin C untuk kulit cerah.</p>
+        <p>Serum vitamin C untuk kulit cerah dan sihat.</p>
         <div class="price">RM 89.90</div>
-        <a href="https://wa.me/60143862897?text=Saya+berminat+dengan+Serum+Mencerahkan" class="order-button">Beli Sekarang</a>
+        <a href="https://wa.me/60143862897?text=Saya%20berminat%20dengan%20Serum%20Mencerahkan" class="order-button" aria-label="Order Serum Mencerahkan">Order Sekarang</a>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1617897668-451-2a5e0e0e79c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=70" alt="Krim Pelembap">
+        <img src="https://images.unsplash.com/photo-1617897664516-2f5e5e0e79c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Krim Pelembap untuk Kulit Lembut" title="Krim Pelembap AR Beauty">
         <h4>Krim Pelembap</h4>
-        <p>Hidrasi kulit untuk kelembutan maksimum.</p>
+        <p>Krim hidrat untuk kelembutan kulit maksimum.</p>
         <div class="price">RM 59.90</div>
-        <a href="https://wa.me/60143862897?text=Saya+berminat+dengan+Krim+Pelembap" class="order-button">Beli Sekarang</a>
+        <a href="https://wa.me/60143862897?text=Saya%20berminat%20dengan%20Krim%20Pelembap" class="order-button" aria-label="Order Krim Pelembap">Order Sekarang</a>
       </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1598440940744-3b9891b8d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Topeng Muka untuk Pembersihan Kulit" title="Topeng Muka AR Beauty">
+        <h4>Topeng Muka</h4>
+        <p>Topeng lumpur untuk pembersihan mendalam.</p>
+        <div class="price">RM 39.90</div>
+        <a href="https://wa.me/60143862897?text=Saya%20berminat%20dengan%20Topeng%20Muka" class="order-button" aria-label="Order Topeng Muka">Order Sekarang</a>
       </div>
-  </div>
+    </div>
+  </section>
 
-  <div id="videos" class="section video-section">
-    <h3>Video Kami</h3>
-    <p>Tonton video untuk petua kecantikan dan pameran servis.</p>
-    <iframe src="https://www.youtube.com/watch?v=5M3T2R4r2RDA" title="Tutorial Kecantikan" allowfullscreen></iframe>
-  </div>
+  <section id="videos" class="section video-section">
+    <h3>Video Petua Kecantikan</h3>
+    <p>Tonton panduan kecantikan dan pameran perkhidmatan spa kami.</p>
+    <iframe src="https://www.youtube.com/embed/_y_eY4r2RDA" title="Panduan Penjagaan Kulit oleh AR Beauty" allowfullscreen></iframe>
+  </section>
 
-  <div id="staff" class="section">
-    <h3>Staf Kami</h3>
-    <p>Berkenalan dengan pasukan profesional kami.</p>
+  <section id="staff" class="section">
+    <h3>Pasukan Staf Profesional Kami</h3>
+    <p>Berkenalan dengan pakar kecantikan kami di AR Beauty.</p>
     <div class="staff-carousel">
       <div class="carousel-track">
         <div class="staff-card">
-          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Aisyah">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Aisyah, Pakar Facial AR Beauty" title="Aisyah - Pakar Facial">
           <h4>Aisyah</h4>
-          <p>Pakar facial dengan pengalaman 5 tahun.</p>
+          <p>Pakar facial dengan 5 tahun pengalaman dalam rawatan kulit.</p>
         </div>
         <div class="staff-card">
-          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Nur">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Nur, Terapis Urutan AR Beauty" title="Nur - Terapis Urutan">
           <h4>Nur</h4>
           <p>Terapis urutan tradisional dan aromaterapi.</p>
         </div>
         <div class="staff-card">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Sofia">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Sofia, Spesialis Kuku AR Beauty" title="Sofia - Spesialis Kuku">
           <h4>Sofia</h4>
           <p>Spesialis rawatan kuku dan relaksasi.</p>
         </div>
       </div>
       <div class="carousel-nav">
-        <button class="prev"><i class="fas fa-chevron-left"></i></button>
-        <button class="next"><i class="fas fa-chevron-right"></i></button>
+        <button class="prev" aria-label="Slaid Sebelumnya"><i class="fas fa-chevron-left"></i></button>
+        <button class="next" aria-label="Slaid Berikutnya"><i class="fas fa-chevron-right"></i></button>
       </div>
       <div class="carousel-dots">
-        <span class="carousel-dot active"></span>
-        <span class="carousel-dot"></span>
-        <span class="carousel-dot"></span>
+        <span class="carousel-dot active" aria-label="Slaid 1"></span>
+        <span class="carousel-dot" aria-label="Slaid 2"></span>
+        <span class="carousel-dot" aria-label="Slaid 3"></span>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div id="about" class="section">
-    <h3>Tentang Kami</h3>
-    <p>AR Rahman Beauty & Wellness Center menawarkan rawatan profesional dalam suasana eksklusif.</p>
-  </div>
+  <section id="about" class="section">
+    <h3>Tentang AR Beauty</h3>
+    <p>AR Beauty & Wellness Center adalah destinasi spa premium di Malaysia, menawarkan rawatan kecantikan profesional untuk ketenangan jiwa dan tubuh.</p>
+  </section>
 
-  <div id="appointment" class="section">
-    <h3>Tempah Sekarang</h3>
-    <p>Isi borang untuk menempah sesi anda.</p>
-    <form class="appointment-form">
+  <section id="appointment" class="section">
+    <h3>Tempah Temu Janji Spa</h3>
+    <p>Isi borang untuk menempah sesi rawatan kecantikan anda.</p>
+    <form class="appointment-form" aria-label="Borang Tempahan Temu Janji">
       <label for="name">Nama Penuh:</label>
-      <input type="text" id="name" name="name" placeholder="Masukkan nama anda" required>
+      <input type="text" id="name" name="name" placeholder="Masukkan nama anda" required aria-required="true">
       <label for="phone">Nombor Telefon:</label>
-      <input type="tel" id="phone" name="phone" placeholder="Contoh: +60123456789" required>
-      <label for="date">Tarikh:</label>
-      <input type="date" id="date" name="date" required>
-      <label for="time">Masa:</label>
-      <input type="time" id="time" name="time" required>
-      <label for="service">Servis:</label>
-      <select id="service" name="service" required>
-        <option value="" disabled selected>Pilih servis</option>
-        <option value="facial">Facial & Spa</option>
-        <option value="massage">Urutan Tradisional</option>
-        <option value="nail">Rawatan Kuku</option>
-        <option value="other">Lain-lain</option>
+      <input type="tel" id="phone" name="phone" placeholder="Contoh: +60123456789" required aria-required="true">
+      <label for="date">Tarikh Temu Janji:</label>
+      <input type="date" id="date" name="date" required aria-required="true">
+      <label for="time">Masa Temu Janji:</label>
+      <input type="time" id="time" name="time" required aria-required="true">
+      <label for="service">Jenis Perkhidmatan:</label>
+      <select id="service" name="service" required aria-required="true">
+        <option value="" disabled selected>Pilih perkhidmatan</option>
+        <option value="Facial & Spa">Facial & Spa</option>
+        <option value="Urutan Tradisional">Urutan Tradisional</option>
+        <option value="Rawatan Kuku">Rawatan Kuku</option>
+        <option value="Lain-lain">Lain-lain</option>
       </select>
-      <button class="form-button" type="submit">Hantar Tempahan</button>
+      <button type="submit" aria-label="Hantar Tempahan ke WhatsApp">Hantar Tempahan</button>
     </form>
-  </div>
+  </section>
 
-  <div id="book" class="section">
+  <section id="book" class="section">
     <h3>Hubungi Kami</h3>
-    <p>Hubungi melalui WhatsApp di <strong>+6014-3862897</strong> atau lawati kami.</p>
+    <p>Hubungi kami melalui WhatsApp di <strong>+6014-3862897</strong>, Instagram <strong>@arbeautywellness</strong>, atau lawati spa kami.</p>
     <div class="social-buttons">
-      <a href="https://wa.me/60143862897" class="social-button whatsapp-button"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      <a href="https://facebook.com/arbeautywellness" class="social-button facebook-button"><i class="fab fa-facebook-f"></i> Facebook</a>
-      <a href="https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8" class="social-button map-button"><i class="fas fa-map-marker-alt"></i> Lokasi</a>
+      <a href="https://wa.me/60143862897" class="social-button whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp Sekarang</a>
+      <a href="https://facebook.com/arbeautywellness" class="social-button facebook-button" aria-label="Hubungi melalui Facebook"><i class="fab fa-facebook-f"></i> Hubungi di Facebook</a>
+      <a href="https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8" class="social-button map-button" aria-label="Lihat Lokasi di Google Maps"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi</a>
     </div>
-  </div>
+  </section>
 
   <footer class="footer">
-    © 2025 AR Rahman Beauty & Wellness Center
+    <p>© 2025 AR Beauty & Wellness Center. Spa Premium & Rawatan Kecantikan di Malaysia.</p>
   </footer>
 
-  <nav class="bottom-nav">
-    <a href="#home" title="Laman Utama"><i class="fas fa-home"></i></a>
-    <a href="#services" title="Servis"><i class="fas fa-spa"></i></a>
-    <a href="#products" title="Produk"><i class="fas fa-shopping-bag"></i></a>
-    <a href="#videos" title="Video"><i class="fas fa-video"></i></a>
-    <a href="#staff" title="Staf"><i class="fas fa-users"></i></a>
-    <a href="#about" title="Tentang Kami"><i class="fas fa-info-circle"></i></a>
-    <a href="#appointment" title="Tempah"><i class="fas fa-calendar-check"></i></a>
-    <a href="#book" title="Hubungi"><i class="fas fa-calendar-alt"></i></a>
+  <nav class="bottom-nav" aria-label="Navigasi Bawah">
+    <a href="#home" title="Laman Utama Spa"><i class="fas fa-home"></i></a>
+    <a href="#services" title="Perkhidmatan Spa dan Kecantikan"><i class="fas fa-spa"></i></a>
+    <a href="#products" title="Produk Penjagaan Kulit"><i class="fas fa-shopping-bag"></i></a>
+    <a href="#videos" title="Video Kecantikan"><i class="fas fa-video"></i></a>
+    <a href="#staff" title="Pasukan Staf Profesional"><i class="fas fa-users"></i></a>
+    <a href="#about" title="Tentang AR Beauty"><i class="fas fa-info-circle"></i></a>
+    <a href="#appointment" title="Tempah Temu Janji Spa"><i class="fas fa-calendar-check"></i></a>
+    <a href="#book" title="Hubungi Kami"><i class="fas fa-calendar-alt"></i></a>
   </nav>
 
   <script>
@@ -741,11 +788,22 @@
       });
     });
 
-    // Appointment Form
+    // Appointment Form - Hantar ke WhatsApp
     const form = document.querySelector('.appointment-form');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert('Tempahan dihantar! Kami akan hubungi anda melalui WhatsApp di +6014-3862897.');
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+      const service = document.getElementById('service').value;
+
+      const message = encodeURIComponent(
+        `Tempahan Temu Janji Spa\nNama: ${name}\nTelefon: ${phone}\nTarikh: ${date}\nMasa: ${time}\nPerkhidmatan: ${service}`
+      );
+      const whatsappUrl = `https://wa.me/60143862897?text=${message}`;
+      
+      window.open(whatsappUrl, '_blank');
       form.reset();
     });
 
