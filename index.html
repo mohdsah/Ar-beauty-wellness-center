@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
+    /* Reset dan Gaya Asas */
     * {
       margin: 0;
       padding: 0;
@@ -17,47 +18,55 @@
       font-family: 'Poppins', sans-serif;
       background: #f0f6fa;
       color: #333;
-      line-height: 1.6;
+      line-height: 1.7;
+      overflow-x: hidden;
     }
 
-    /* Header Style */
+    /* Animasi Global */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Header */
     .mobile-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: linear-gradient(to right, #6b9ac4, #b3cde0);
+      background: linear-gradient(90deg, #6b9ac4, #b3cde0);
       color: white;
-      padding: 15px 20px;
+      padding: 12px 20px;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
     }
 
     .mobile-header h1 {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 600;
     }
 
     .menu-icon {
-      font-size: 28px;
+      font-size: 26px;
       cursor: pointer;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, color 0.3s ease;
     }
 
     .menu-icon:hover {
       transform: rotate(90deg);
+      color: #4682b4;
     }
 
-    /* Sidebar Menu */
+    /* Sidebar */
     .sidebar {
       position: fixed;
       top: 0;
-      right: -250px;
-      width: 250px;
+      right: -260px;
+      width: 260px;
       height: 100%;
       background: #fff;
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+      box-shadow: -3px 0 8px rgba(0, 0, 0, 0.1);
       transition: right 0.3s ease;
       z-index: 1001;
     }
@@ -73,151 +82,309 @@
     }
 
     .sidebar ul li {
-      margin: 20px 0;
+      margin: 15px 0;
     }
 
     .sidebar ul li a {
       color: #6b9ac4;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 400;
-      transition: color 0.3s ease;
+      transition: color 0.3s ease, padding-left 0.3s ease;
     }
 
     .sidebar ul li a:hover {
       color: #4682b4;
+      padding-left: 8px;
     }
 
     /* Hero Section */
     .hero-section {
-      background: linear-gradient(to right, #dfe9f3, #f0f6fa);
-      padding: 80px 20px;
+      background: linear-gradient(90deg, #dfe9f3, #f0f6fa);
+      padding: 90px 20px;
       text-align: center;
       color: #333;
       position: relative;
-      overflow: hidden;
     }
 
     .hero-section h2 {
-      font-size: 36px;
+      font-size: 34px;
       font-weight: 600;
-      margin-bottom: 15px;
       color: #6b9ac4;
+      margin-bottom: 12px;
       animation: fadeIn 1s ease-in;
     }
 
     .hero-section p {
-      font-size: 18px;
+      font-size: 17px;
       color: #555;
-      animation: fadeIn 1.5s ease-in;
+      max-width: 600px;
+      margin: 0 auto 20px;
+      animation: fadeIn 1.3s ease-in;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Section Content */
+    /* Section Umum */
     .section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      margin-bottom: 20px;
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      animation: fadeIn 1s ease-in;
     }
 
     .section h3 {
       color: #6b9ac4;
-      font-size: 24px;
+      font-size: 26px;
       margin-bottom: 20px;
       position: relative;
     }
 
     .section h3::after {
       content: '';
-      width: 50px;
+      width: 60px;
       height: 3px;
       background: #4682b4;
       position: absolute;
-      bottom: -5px;
-      left: 0;
+      bottom: -8px;
+      left: ;
+    }
+
+    .section p, .section ul li {
+      font-size: 16px;
+      color: #444;
     }
 
     .section ul li {
-      margin-bottom: 12px;
-      font-size: 16px;
-      color: #444;
+      margin-bottom: 10px;
       list-style: none;
     }
 
     .section ul li::before {
-      content: '✨';
-      margin-right: 10px;
+      content: '✩';
+      margin-right: 8px;
       color: #4682b4;
     }
 
     /* Product Section */
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 25px;
     }
 
     .product-card {
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 20px;
       text-align: center;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .product-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
     }
 
     .product-card img {
       width: 100%;
-      height: 150px;
+      height: 160px;
       object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 10px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      transition: opacity 0.3s ease;
+    }
+
+    .product-card img:hover {
+      opacity: 0.9;
     }
 
     .product-card h4 {
       color: #6b9ac4;
-      font-size: 18px;
-      margin-bottom: 10px;
+      font-size: 19px;
+      margin-bottom: 8px;
     }
 
     .product-card p {
-      color: #555;
+      color: #666;
       font-size: 14px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .product-card .price {
       color: #4682b4;
       font-weight: 600;
-      font-size: 16px;
+      font-size: 17px;
       margin-bottom: 15px;
     }
 
-    .product-card .buy-button {
+    .product-card .order-button {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 10px 22px;
       background: #4682b4;
-      color: white;
+      color: #fff;
       text-decoration: none;
-      border-radius: 20px;
-      font-size: 14px;
+      border-radius: 25px;
+      font-size: 15px;
+      font-weight: 500;
       transition: background 0.3s ease, transform 0.3s ease;
     }
 
-    .product-card .buy-button:hover {
+    .product-card .order-button:hover {
+      background: #3a6b9a;
+      transform: scale(1.08);
+    }
+
+    /* Video Section */
+    .video-section {
+      text-align: center;
+    }
+
+    .video-section iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      margin-top: 20px;
+    }
+
+    /* Staff Section - Carousel */
+    .staff-carousel {
+      position: relative;
+      max-width: 600px;
+      margin: 25px auto;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .staff-carousel .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .staff-card {
+      min-width: 100%;
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .staff-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 12px;
+    }
+
+    .staff-card h4 {
+      color: #6b9ac4;
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    .staff-card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .carousel-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+
+    .carousel-nav button {
+      background: #4682b4;
+      color: #fff;
+      border: none;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .carousel-nav button:hover {
+      background: #3a6b9a;
+      transform: scale(1.1);
+    }
+
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+      background: #dfe9f3;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .carousel-dot.active {
+      background: #4682b4;
+    }
+
+    /* Appointment Section */
+    .appointment-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .appointment-form label {
+      font-size: 16px;
+      color: #444;
+      font-weight: 500;
+    }
+
+    .appointment-form input,
+    .appointment-form select {
+      padding: 10px;
+      font-size: 15px;
+      border: 1px solid #dfe9f3;
+      border-radius: 8px;
+      background: #fff;
+      transition: border-color 0.3s ease;
+    }
+
+    .appointment-form input:focus,
+    .appointment-form select:focus {
+      border-color: #4682b4;
+      outline: none;
+    }
+
+    .appointment-form button {
+      padding: 12px;
+      background: #4682b4;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .appointment-form .form-button:hover {
       background: #3a6b9a;
       transform: scale(1.05);
     }
@@ -225,20 +392,22 @@
     /* Social Buttons */
     .social-buttons {
       display: flex;
+      flex-wrap: wrap;
       gap: 15px;
-      margin-top: 20px;
+      margin-top: 25px;
+      justify-content: center;
     }
 
     .social-button {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      padding: 12px 24px;
-      color: white;
+      padding: 12px 28px;
+      color: #fff;
       text-decoration: none;
-      border-radius: 25px;
+      border-radius: 30px;
       font-weight: 500;
+      font-size: 15px;
       transition: background 0.3s ease, transform 0.3s ease;
-      font-size: 16px;
     }
 
     .whatsapp-button {
@@ -246,7 +415,7 @@
     }
 
     .facebook-button {
-      background: #3b5998;
+      background: #344e86;
     }
 
     .map-button {
@@ -254,26 +423,26 @@
     }
 
     .social-button i {
-      margin-right: 8px;
+      margin-right: 10px;
       font-size: 18px;
     }
 
     .whatsapp-button:hover {
-      background: #1ebe57;
-      transform: scale(1.05);
+      background: #1ebea5;
+      transform: scale(1.08);
     }
 
     .facebook-button:hover {
-      background: #344e86;
-      transform: scale(1.05);
+      background: #2f4373;
+      transform: scale(1.08);
     }
 
     .map-button:hover {
       background: #3a6b9a;
-      transform: scale(1.05);
+      transform: scale(1.08);
     }
 
-    /* Bottom Tab Navigation */
+    /* Bottom Navigation */
     .bottom-nav {
       position: fixed;
       bottom: 0;
@@ -282,34 +451,35 @@
       background: #fff;
       border-top: 1px solid #dfe9f3;
       justify-content: space-around;
-      padding: 12px 0;
-      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+      padding: 10px;
+      box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.06);
+      z-index: 999;
     }
 
     .bottom-nav a {
       color: #6b9ac4;
       text-decoration: none;
-      font-size: 26px;
+      font-size: 24px;
       transition: color 0.3s ease, transform 0.3s ease;
     }
 
     .bottom-nav a:hover {
       color: #4682b4;
-      transform: scale(1.2);
+      transform: scale(1.15);
     }
 
     /* Footer */
     .footer {
       text-align: center;
-      padding: 30px 20px;
+      padding: 25px;
       font-size: 14px;
-      color: #777;
+      color: #666;
       margin-bottom: 80px;
       background: #f0f6fa;
     }
 
     /* Responsive Design */
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       .hero-section h2 {
         font-size: 28px;
       }
@@ -319,21 +489,49 @@
       }
 
       .section {
-        padding: 30px 15px;
+        padding: 40px 15px;
       }
 
+      .section h3 {
+        font-size: 24px;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .product-card img {
+        height: 140px;
+      }
+
+      .video-section iframe {
+        height: 350px;
+      }
+
+      .staff-carousel {
+        max-width: 500px;
+      }
+    }
+
+    @media (max-width: 480px) {
       .mobile-header h1 {
         font-size: 20px;
       }
 
-      .social-buttons {
-        flex-direction: column;
-        gap: 10px;
+      .hero-section {
+        padding: 60px 10px;
       }
 
-      .social-button {
-        width: 100%;
-        justify-content: center;
+      .hero-section h2 {
+        font-size: 24px;
+      }
+
+      .hero-section p {
+        font-size: 15px;
+      }
+
+      .section {
+        margin: 15px;
       }
 
       .product-grid {
@@ -343,115 +541,263 @@
       .product-card img {
         height: 120px;
       }
+
+      .video-section iframe {
+        height: 250px;
+      }
+
+      .staff-carousel {
+        max-width: 300px;
+      }
+
+      .staff-card img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .social-buttons {
+        flex-direction: column;
+      }
+
+      .social-button {
+        width: 100%;
+        padding: 10px;
+      }
+
+      .bottom-nav a {
+        font-size: 20px;
+      }
+
+      .appointment-form {
+        margin: 15px;
+      }
     }
   </style>
 </head>
 <body>
-
   <header class="mobile-header">
-    <h1>AR Beauty</h1>
+    <h1>AR Rahman Beauty</h1>
     <div class="menu-icon"><i class="fas fa-bars"></i></div>
   </header>
 
-  <div class="sidebar" id="sidebar">
+  <div class="sidebar" id="sidebar-menu">
     <ul>
       <li><a href="#home">Laman Utama</a></li>
-      <li><a href="#services">Perkhidmatan</a></li>
+      <li><a href="#services">Servis</a></li>
       <li><a href="#products">Produk</a></li>
+      <li><a href="#videos">Video</a></li>
+      <li><a href="#staff">Staf</a></li>
       <li><a href="#about">Tentang Kami</a></li>
-      <li><a href="#book">Tempahan</a></li>
+      <li><a href="#appointment">Tempah</a></li>
+      <li><a href="#book">Hubungi</a></li>
     </ul>
   </div>
 
   <div class="hero-section">
-    <h2>Spa Premium, Sentuhan Eksklusif</h2>
+    <h2>Spa Premium, Sentuhan Elegan</h2>
     <p>Kecantikan dan ketenangan di hujung jari anda.</p>
-    <a href="#book" class="social-button whatsapp-button"><i class="fab fa-whatsapp"></i> Tempah Sekarang</a>
+    <a href="#book" class="social-button whatsapp-button"><i class="fab fa-whatsapp"></i> Hubungi Sekarang</a>
   </div>
 
   <div id="home" class="section">
-    <h3>Perkhidmatan Kami</h3>
+    <h3>Servis Kami</h3>
     <ul>
       <li>Facial & Spa Eksklusif</li>
       <li>Urutan Tradisional & Aromaterapi</li>
-      <li>Rawatan Kulit, Kuku & Relaksasi</li>
+      <li>Rawatan Kecantikan</li>
     </ul>
   </div>
 
   <div id="products" class="section">
     <h3>Produk Kami</h3>
-    <p>Temui rangkaian produk kecantikan premium kami untuk penjagaan harian anda.</p>
+    <p>Temui produk kecantikan premium untuk penjagaan harian anda.</p>
     <div class="product-grid">
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1624969862644-5f1b6c7a6f65?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Serum Mencerahkan">
+        <img src="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=60" alt="Serum Mencerahkan">
         <h4>Serum Mencerahkan</h4>
-        <p>Serum dengan ekstrak vitamin C untuk kulit berseri.</p>
+        <p>Serum dengan vitamin C untuk kulit cerah.</p>
         <div class="price">RM 89.90</div>
-        <a href="https://wa.me/60143862887?text=Saya%20berminat%20dengan%20Serum%20Mencerahkan" class="buy-button">Beli Sekarang</a>
+        <a href="https://wa.me/60143862897?text=Saya+berminat+dengan+Serum+Mencerahkan" class="order-button">Beli Sekarang</a>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1617897664516-2f5e5e0e79c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Krim Pelembap">
+        <img src="https://images.unsplash.com/photo-1617897668-451-2a5e0e0e79c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=70" alt="Krim Pelembap">
         <h4>Krim Pelembap</h4>
-        <p>Krim hidrat untuk kulit lembut dan sihat.</p>
+        <p>Hidrasi kulit untuk kelembutan maksimum.</p>
         <div class="price">RM 59.90</div>
-        <a href="https://wa.me/60143862887?text=Saya%20berminat%20dengan%20Krim%20Pelembap" class="buy-button">Beli Sekarang</a>
+        <a href="https://wa.me/60143862897?text=Saya+berminat+dengan+Krim+Pelembap" class="order-button">Beli Sekarang</a>
       </div>
-      <div class="product-card">
-        <img src="https://raw.githubusercontent.com/mohdsah/Ar-beauty-wellness-center/refs/heads/main/topeng.jpg" alt="Topeng Muka">
-        <h4>Topeng Muka</h4>
-        <p>Topeng lumpur untuk pembersihan mendalam.</p>
-        <div class="price">RM 39.90</div>
-        <a href="https://wa.me/60143862887?text=Saya%20berminat%20dengan%20Topeng%20Muka" class="buy-button">Beli Sekarang</a>
+      </div>
+  </div>
+
+  <div id="videos" class="section video-section">
+    <h3>Video Kami</h3>
+    <p>Tonton video untuk petua kecantikan dan pameran servis.</p>
+    <iframe src="https://www.youtube.com/watch?v=5M3T2R4r2RDA" title="Tutorial Kecantikan" allowfullscreen></iframe>
+  </div>
+
+  <div id="staff" class="section">
+    <h3>Staf Kami</h3>
+    <p>Berkenalan dengan pasukan profesional kami.</p>
+    <div class="staff-carousel">
+      <div class="carousel-track">
+        <div class="staff-card">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Aisyah">
+          <h4>Aisyah</h4>
+          <p>Pakar facial dengan pengalaman 5 tahun.</p>
+        </div>
+        <div class="staff-card">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Nur">
+          <h4>Nur</h4>
+          <p>Terapis urutan tradisional dan aromaterapi.</p>
+        </div>
+        <div class="staff-card">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Sofia">
+          <h4>Sofia</h4>
+          <p>Spesialis rawatan kuku dan relaksasi.</p>
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <button class="prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="carousel-dots">
+        <span class="carousel-dot active"></span>
+        <span class="carousel-dot"></span>
+        <span class="carousel-dot"></span>
       </div>
     </div>
   </div>
 
   <div id="about" class="section">
     <h3>Tentang Kami</h3>
-    <p>AR Beauty & Wellness Center adalah destinasi kecantikan yang menawarkan rawatan profesional dalam suasana eksklusif untuk ketenangan jiwa dan tubuh.</p>
+    <p>AR Rahman Beauty & Wellness Center menawarkan rawatan profesional dalam suasana eksklusif.</p>
+  </div>
+
+  <div id="appointment" class="section">
+    <h3>Tempah Sekarang</h3>
+    <p>Isi borang untuk menempah sesi anda.</p>
+    <form class="appointment-form">
+      <label for="name">Nama Penuh:</label>
+      <input type="text" id="name" name="name" placeholder="Masukkan nama anda" required>
+      <label for="phone">Nombor Telefon:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Contoh: +60123456789" required>
+      <label for="date">Tarikh:</label>
+      <input type="date" id="date" name="date" required>
+      <label for="time">Masa:</label>
+      <input type="time" id="time" name="time" required>
+      <label for="service">Servis:</label>
+      <select id="service" name="service" required>
+        <option value="" disabled selected>Pilih servis</option>
+        <option value="facial">Facial & Spa</option>
+        <option value="massage">Urutan Tradisional</option>
+        <option value="nail">Rawatan Kuku</option>
+        <option value="other">Lain-lain</option>
+      </select>
+      <button class="form-button" type="submit">Hantar Tempahan</button>
+    </form>
   </div>
 
   <div id="book" class="section">
-    <h3>Tempahan</h3>
-    <p>Hubungi kami melalui WhatsApp di <strong>+6014-3862887</strong>, DM Instagram <strong>@arbeautywellness</strong>, atau lawati kami di lokasi kami.</p>
+    <h3>Hubungi Kami</h3>
+    <p>Hubungi melalui WhatsApp di <strong>+6014-3862897</strong> atau lawati kami.</p>
     <div class="social-buttons">
-      <a href="https://wa.me/60143862887" class="social-button whatsapp-button"><i class="fab fa-whatsapp"></i> WhatsApp Sekarang</a>
-      <a href="https://facebook.com/arbeautywellness" class="social-button facebook-button"><i class="fab fa-facebook-f"></i> Hubungi di Facebook</a>
-      <a href="https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8" class="social-button map-button"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi</a>
+      <a href="https://wa.me/60143862897" class="social-button whatsapp-button"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://facebook.com/arbeautywellness" class="social-button facebook-button"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8" class="social-button map-button"><i class="fas fa-map-marker-alt"></i> Lokasi</a>
     </div>
   </div>
 
   <footer class="footer">
-    © 2025 AR Beauty & Wellness Center
+    © 2025 AR Rahman Beauty & Wellness Center
   </footer>
 
   <nav class="bottom-nav">
     <a href="#home" title="Laman Utama"><i class="fas fa-home"></i></a>
-    <a href="#services" title="Perkhidmatan"><i class="fas fa-spa"></i></a>
+    <a href="#services" title="Servis"><i class="fas fa-spa"></i></a>
     <a href="#products" title="Produk"><i class="fas fa-shopping-bag"></i></a>
+    <a href="#videos" title="Video"><i class="fas fa-video"></i></a>
+    <a href="#staff" title="Staf"><i class="fas fa-users"></i></a>
     <a href="#about" title="Tentang Kami"><i class="fas fa-info-circle"></i></a>
-    <a href="#book" title="Tempahan"><i class="fas fa-calendar-alt"></i></a>
+    <a href="#appointment" title="Tempah"><i class="fas fa-calendar-check"></i></a>
+    <a href="#book" title="Hubungi"><i class="fas fa-calendar-alt"></i></a>
   </nav>
 
   <script>
+    // Sidebar Toggle
     const menuIcon = document.querySelector('.menu-icon');
     const sidebar = document.querySelector('.sidebar');
-
     menuIcon.addEventListener('click', () => {
       sidebar.classList.toggle('active');
     });
 
-    // Smooth scroll for anchor links
+    // Smooth Scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
         });
-        sidebar.classList.remove('active'); // Close sidebar on link click
+        sidebar.classList.remove('active');
       });
     });
-  </script>
 
+    // Appointment Form
+    const form = document.querySelector('.appointment-form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Tempahan dihantar! Kami akan hubungi anda melalui WhatsApp di +6014-3862897.');
+      form.reset();
+    });
+
+    // Staff Carousel
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel-nav .next');
+    const prevButton = document.querySelector('.carousel-nav .prev');
+    const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    let currentIndex = 0;
+    let autoSlide = setInterval(nextSlide, 5000);
+
+    function updateSlides() {
+      track.style.transform = `translateX(${-slideWidth * currentIndex}px)`;
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlides();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateSlides();
+    }
+
+    nextButton.addEventListener('click', () => {
+      clearInterval(autoSlide);
+      nextSlide();
+      autoSlide = setInterval(nextSlide, 5000);
+    });
+
+    prevButton.addEventListener('click', () => {
+      clearInterval(autoSlide);
+      prevSlide();
+      autoSlide = setInterval(nextSlide, 5000);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        clearInterval(autoSlide);
+        currentIndex = i;
+        updateSlides();
+        autoSlide = setInterval(nextSlide, 5000);
+      });
+    });
+
+    slides.forEach((slide, index) => {
+      slide.style.left = `${slideWidth * index}px`;
+    });
+  </script>
 </body>
 </html>
