@@ -157,21 +157,45 @@
       color: #ff8a80;
     }
 
-    /* Booking Button */
-    .book-button {
-      display: inline-block;
+    /* Social Buttons */
+    .social-buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-button {
+      display: flex;
+      align-items: center;
       padding: 12px 24px;
-      background: #ff8a80;
       color: white;
       text-decoration: none;
       border-radius: 25px;
       font-weight: 500;
       transition: background 0.3s ease, transform 0.3s ease;
-      margin-top: 15px;
+      font-size: 16px;
     }
 
-    .book-button:hover {
-      background: #d36b6b;
+    .whatsapp-button {
+      background: #25D366;
+    }
+
+    .facebook-button {
+      background: #3b5998;
+    }
+
+    .social-button i {
+      margin-right: 8px;
+      font-size: 18px;
+    }
+
+    .whatsapp-button:hover {
+      background: #1ebe57;
+      transform: scale(1.05);
+    }
+
+    .facebook-button:hover {
+      background: #344e86;
       transform: scale(1.05);
     }
 
@@ -227,6 +251,16 @@
       .mobile-header h1 {
         font-size: 20px;
       }
+
+      .social-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .social-button {
+        width: 100%;
+        justify-content: center;
+      }
     }
   </style>
 </head>
@@ -249,7 +283,7 @@
   <div class="hero-section">
     <h2>Spa Premium, Sentuhan Eksklusif</h2>
     <p>Kecantikan dan ketenangan di hujung jari anda.</p>
-    <a href="#book" class="book-button">Tempah Sekarang</a>
+    <a href="#book" class="social-button whatsapp-button"><i class="fab fa-whatsapp"></i> Tempah Sekarang</a>
   </div>
 
   <div id="home" class="section">
@@ -269,7 +303,10 @@
   <div id="book" class="section">
     <h3>Tempahan</h3>
     <p>Hubungi kami melalui WhatsApp di <strong>+6012-3456789</strong> atau DM Instagram <strong>@arbeautywellness</strong></p>
-    <a href="https://wa.me/60123456789" class="book-button">WhatsApp Sekarang</a>
+    <div class="social-buttons">
+      <a href="https://wa.me/60123456789" class="social-button whatsapp-button"><i class="fab fa-whatsapp"></i> WhatsApp Sekarang</a>
+      <a href="https://facebook.com/arbeautywellness" class="social-button facebook-button"><i class="fab fa-facebook-f"></i> Hubungi di Facebook</a>
+    </div>
   </div>
 
   <footer class="footer">
