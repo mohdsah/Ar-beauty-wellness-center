@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AR Beauty & Wellness Center</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header Style */
+    .mobile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to right, #ff8a80, #ffb997);
+      color: white;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-header h1 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .menu-icon {
+      font-size: 28px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-icon:hover {
+      transform: rotate(90deg);
+    }
+
+    /* Sidebar Menu */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100%;
+      background: #fff;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+      transition: right 0.3s ease;
+      z-index: 1001;
+    }
+
+    .sidebar.active {
+      right: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    .sidebar ul li {
+      margin: 20px 0;
+    }
+
+    .sidebar ul li a {
+      color: #d36b6b;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 400;
+      transition: color 0.3s ease;
+    }
+
+    .sidebar ul li a:hover {
+      color: #ff8a80;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(to right, #ffebee, #fff3f3);
+      padding: 80px 20px;
+      text-align: center;
+      color: #333;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section h2 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .hero-section p {
+      font-size: 18px;
+      color: #555;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Section Content */
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+    }
+
+    .section h3 {
+      color: #d36b6b;
+      font-size: 24px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .section h3::after {
+      content: '';
+      width: 50px;
+      height: 3px;
+      background: #ff8a80;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    .section ul li {
+      margin-bottom: 12px;
+      font-size: 16px;
+      color: #444;
+      list-style: none;
+    }
+
+    .section ul li::before {
+      content: '✨';
+      margin-right: 10px;
+      color: #ff8a80;
+    }
+
+    /* Booking Button */
+    .book-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #ff8a80;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: background 0.3s ease, transform 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .book-button:hover {
+      background: #d36b6b;
+      transform: scale(1.05);
+    }
+
+    /* Bottom Tab Navigation */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      background: #fff;
+      border-top: 1px solid #ffdada;
+      justify-content: space-around;
+      padding: 12px 0;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .bottom-nav a {
+      color: #d36b6b;
+      text-decoration: none;
+      font-size: 26px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .bottom-nav a:hover {
+      color: #ff8a80;
+      transform: scale(1.2);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 80px;
+      background: #fff3f3;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .hero-section h2 {
+        font-size: 28px;
+      }
+
+      .hero-section p {
+        font-size: 16px;
+      }
+
+      .section {
+        padding: 30px 15px;
+      }
+
+      .mobile-header h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="mobile-header">
+    <h1>AR Beauty</h1>
+    <div class="menu-icon"><i class="fas fa-bars"></i></div>
+  </header>
+
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#home">Laman Utama</a></li>
+      <li><a href="#services">Perkhidmatan</a></li>
+      <li><a href="#about">Tentang Kami</a></li>
+      <li><a href="#book">Tempahan</a></li>
+    </ul>
+  </div>
+
+  <div class="hero-section">
+    <h2>Spa Premium, Sentuhan Eksklusif</h2>
+    <p>Kecantikan dan ketenangan di hujung jari anda.</p>
+    <a href="#book" class="book-button">Tempah Sekarang</a>
+  </div>
+
+  <div id="home" class="section">
+    <h3>Perkhidmatan Kami</h3>
+    <ul>
+      <li>Facial & Spa Eksklusif</li>
+      <li>Urutan Tradisional & Aromaterapi</li>
+      <li>Rawatan Kulit, Kuku & Relaksasi</li>
+    </ul>
+  </div>
+
+  <div id="about" class="section">
+    <h3>Tentang Kami</h3>
+    <p>AR Beauty & Wellness Center adalah destinasi kecantikan yang menawarkan rawatan profesional dalam suasana eksklusif untuk ketenangan jiwa dan tubuh.</p>
+  </div>
+
+  <div id="book" class="section">
+    <h3>Tempahan</h3>
+    <p>Hubungi kami melalui WhatsApp di <strong>+6012-3456789</strong> atau DM Instagram <strong>@arbeautywellness</strong></p>
+    <a href="https://wa.me/60123456789" class="book-button">WhatsApp Sekarang</a>
+  </div>
+
+  <footer class="footer">
+    © 2025 AR Beauty & Wellness Center
+  </footer>
+
+  <nav class="bottom-nav">
+    <a href="#home" title="Laman Utama"><i class="fas fa-home"></i></a>
+    <a href="#services" title="Perkhidmatan"><i class="fas fa-spa"></i></a>
+    <a href="#about" title="Tentang Kami"><i class="fas fa-info-circle"></i></a>
+    <a href="#book" title="Tempahan"><i class="fas fa-calendar-alt"></i></a>
+  </nav>
+
+  <script>
+    const menuIcon = document.querySelector('.menu-icon');
+    const sidebar = document.querySelector('.sidebar');
+
+    menuIcon.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+        sidebar.classList.remove('active'); // Close sidebar on link click
+      });
+    });
+  </script>
+
+</body>
+</html>
