@@ -9,20 +9,28 @@
   <meta name="robots" content="index, follow">
   <!-- Open Graph untuk Media Sosial -->
   <meta property="og:title" content="AR Beauty & Wellness Center - Rawatan Kecantikan di Malaysia">
-  <meta property="og:description" content="Nikmati rawatan kecantikan eksklusif dan produk penjagaan kulit di AR Beauty. Hubungi +6011-14477190 untuk tempahan!">
+  <meta property="og:description" content="Nikmati rawatan kecantikan eksklusif dan produk penjagaan kulit di AR Beauty. Hubungi melalui WhatsApp untuk tempahan!">
   <meta property="og:image" content="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
   <meta property="og:url" content="https://www.arbeautywellness.com">
   <meta property="og:type" content="website">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="AR Beauty & Wellness Center - Rawatan Kecantikan di Malaysia">
-  <meta name="twitter:description" content="Nikmati rawatan kecantikan eksklusif dan produk penjagaan kulit. Hubungi +6011-14477190!">
+  <meta name="twitter:description" content="Nikmati rawatan kecantikan eksklusif dan produk penjagaan kulit. Hubungi melalui WhatsApp!">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
   <!-- Canonical Link -->
   <link rel="canonical" href="https://www.arbeautywellness.com">
   <title>AR Beauty & Wellness Center - Rawatan Kecantikan Malaysia</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
   <style>
     /* Reset dan Gaya Asas */
     * {
@@ -42,11 +50,6 @@
     /* Animasi Global */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
@@ -212,6 +215,113 @@
       content: '✨';
       margin-right: 8px;
       color: #4682b4;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background: linear-gradient(180deg, #f9fafc, #dfe9f3); /* Gradient lembut */
+      padding: 60px 20px;
+    }
+
+    .contact-logo {
+      display: block;
+      max-width: 200px;
+      height: auto;
+      margin: 0 auto 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-logo:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-info p {
+      font-size: 17px;
+      color: #444;
+      margin-bottom: 12px;
+    }
+
+    .contact-buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Social Buttons */
+    .social-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 16px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .whatsapp-button {
+      background: #25D366;
+    }
+
+    .facebook-button {
+      background: #3b5998;
+    }
+
+    .map-button {
+      background: #4682b4;
+    }
+
+    .download-button {
+      background: #f28c38;
+    }
+
+    .instagram-button {
+      background: #E1306C;
+    }
+
+    .social-button i {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    .whatsapp-button:hover {
+      background: #1ebe57;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .facebook-button:hover {
+      background: #344e86;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .map-button:hover {
+      background: #3a6b9a;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .download-button:hover {
+      background: #d67a30;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .instagram-button:hover {
+      background: #C13584;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
     }
 
     /* Product Section */
@@ -463,101 +573,6 @@
       transform: scale(1.05);
     }
 
-    /* Contact Section */
-    #book {
-      background: #f5faff; /* Latar belakang biru pucat */
-      padding: 60px 20px;
-    }
-
-    .contact-container {
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .contact-logo {
-      display: block;
-      max-width: 180px;
-      height: auto;
-      margin: 0 auto 25px;
-      border-radius: 50%;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      animation: fadeInUp 1s ease-in;
-    }
-
-    .contact-logo:hover {
-      transform: scale(1.05);
-    }
-
-    #book h3 {
-      font-size: 30px;
-      font-weight: 600;
-      color: #4682b4;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      margin-bottom: 15px;
-      animation: fadeInUp 1.2s ease-in;
-    }
-
-    #book p {
-      font-size: 16px;
-      color: #555;
-      max-width: 600px;
-      margin: 0 auto 30px;
-      animation: fadeInUp 1.4s ease-in;
-    }
-
-    /* Social Buttons */
-    .social-buttons {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      justify-content: center;
-      max-width: 600px;
-      margin: 0 auto;
-      animation: fadeInUp 1.6s ease-in;
-    }
-
-    .social-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 20px;
-      color: white;
-      text-decoration: none;
-      border-radius: 35px;
-      font-weight: 500;
-      font-size: 16px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .social-button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .whatsapp-button {
-      background: linear-gradient(45deg, #25D366, #20b558);
-    }
-
-    .facebook-button {
-      background: linear-gradient(45deg, #3b5998, #2a4373);
-    }
-
-    .map-button {
-      background: linear-gradient(45deg, #4682b4, #3a6b9a);
-    }
-
-    .download-button {
-      background: linear-gradient(45deg, #f28c38, #d67a30);
-    }
-
-    .social-button i {
-      margin-right: 10px;
-      font-size: 18px;
-    }
-
     /* Bottom Navigation */
     .bottom-nav {
       position: fixed;
@@ -608,6 +623,10 @@
         padding: 40px 15px;
       }
 
+      .contact-section {
+        padding: 50px 15px;
+      }
+
       .section h3 {
         font-size: 24px;
       }
@@ -628,12 +647,8 @@
         max-width: 500px;
       }
 
-      .social-buttons {
+      .contact-buttons {
         grid-template-columns: 1fr;
-      }
-
-      #book {
-        padding: 50px 15px;
       }
     }
 
@@ -656,6 +671,18 @@
 
       .section {
         margin: 15px;
+      }
+
+      .contact-section {
+        padding: 40px 15px;
+      }
+
+      .contact-logo {
+        max-width: 150px;
+      }
+
+      .contact-info p {
+        font-size: 16px;
       }
 
       .product-grid {
@@ -684,20 +711,9 @@
         font-size: 14px;
       }
 
-      .social-buttons {
-        grid-template-columns: 1fr;
-      }
-
       .social-button {
-        padding: 10px 15px;
-      }
-
-      .contact-logo {
-        max-width: 140px;
-      }
-
-      #book h3 {
-        font-size: 26px;
+        width: 100%;
+        padding: 10px 20px;
       }
 
       .bottom-nav a {
@@ -729,7 +745,8 @@
     "sameAs": [
       "https://facebook.com/arbeautywellness",
       "https://wa.me/601114477190",
-      "https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8"
+      "https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8",
+      "https://instagram.com/arbeautywellness"
     ],
     "openingHours": [
       "Mo-Sa 10:00-20:00",
@@ -880,17 +897,15 @@
     </form>
   </section>
 
-  <section id="book" class="section">
-    <div class="contact-container">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Logo AR Beauty & Wellness Center" class="contact-logo" loading="lazy">
-      <h3>Hubungi Kami</h3>
-      <p>Hubungi kami melalui WhatsApp di <strong>+6011-14477190</strong>, Instagram <strong>@arbeautywellness</strong>, atau lawati kami.</p>
-      <div class="social-buttons">
-        <a href="https://wa.me/601114477190" class="social-button whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp Sekarang</a>
-        <a href="https://facebook.com/arbeautywellness" class="social-button facebook-button" aria-label="Hubungi melalui Facebook"><i class="fab fa-facebook-f"></i> Hubungi di Facebook</a>
-        <a href="https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8" class="social-button map-button" aria-label="Lihat Lokasi di Google Maps"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi</a>
-        <a href="https://www.arbeautywellness.com/brochure.pdf" class="social-button download-button" aria-label="Muat Turun Brosur" download><i class="fas fa-download"></i> Muat Turun Brosur</a>
-      </div>
+  <section id="book" class="section contact-section">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Logo AR Beauty & Wellness Center" class="contact-logo" loading="lazy">
+    <h3>Hubungi Kami</h3>
+    <div class="contact-buttons">
+      <a href="https://wa.me/601114477190" class="social-button whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp Sekarang</a>
+      <a href="https://facebook.com/arbeautywellness" class="social-button facebook-button" aria-label="Hubungi melalui Facebook"><i class="fab fa-facebook-f"></i> Hubungi di Facebook</a>
+      <a href="https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8" class="social-button map-button" aria-label="Lihat Lokasi di Google Maps"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi</a>
+      <a href="https://www.arbeautywellness.com/brochure.pdf" class="social-button download-button" aria-label="Muat Turun Brosur" download><i class="fas fa-download"></i> Muat Turun Brosur</a>
+      <a href="https://instagram.com/arbeautywellness" class="social-button instagram-button" aria-label="Ikuti di Instagram" target="_blank"><i class="fab fa-instagram"></i> Ikuti di Instagram</a>
     </div>
   </section>
 
