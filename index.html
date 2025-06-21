@@ -45,6 +45,11 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     /* Header */
     .mobile-header {
       display: flex;
@@ -117,24 +122,49 @@
 
     /* Hero Section */
     .hero-section {
-      background: linear-gradient(90deg, #dfe9f3, #f0f6fa);
+      position: relative;
       padding: 90px 20px;
       text-align: center;
-      color: #333;
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      display: none; /* Sembunyikan imej dari paparan visual */
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* Overlay lebih gelap */
+      z-index: 1;
+    }
+
+    .hero-section h2, .hero-section p, .hero-section a {
       position: relative;
+      z-index: 2;
     }
 
     .hero-section h2 {
       font-size: 34px;
       font-weight: 600;
-      color: #6b9ac4;
       margin-bottom: 12px;
       animation: fadeIn 1s ease-in;
     }
 
     .hero-section p {
       font-size: 17px;
-      color: #555;
       max-width: 600px;
       margin: 0 auto 20px;
       animation: fadeIn 1.3s ease-in;
@@ -300,18 +330,6 @@
       margin-bottom: 12px;
     }
 
-    .staff-card h4 {
-      color: #6b9ac4;
-      font-size: 19px;
-      margin-bottom: 8px;
-    }
-
-    .staff-card p {
-      color: #555;
-      font-size: 14px;
-      margin-bottom: 12px;
-    }
-
     .staff-social-buttons {
       display: flex;
       justify-content: center;
@@ -445,57 +463,99 @@
       transform: scale(1.05);
     }
 
+    /* Contact Section */
+    #book {
+      background: #f5faff; /* Latar belakang biru pucat */
+      padding: 60px 20px;
+    }
+
+    .contact-container {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-logo {
+      display: block;
+      max-width: 180px;
+      height: auto;
+      margin: 0 auto 25px;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      animation: fadeInUp 1s ease-in;
+    }
+
+    .contact-logo:hover {
+      transform: scale(1.05);
+    }
+
+    #book h3 {
+      font-size: 30px;
+      font-weight: 600;
+      color: #4682b4;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      margin-bottom: 15px;
+      animation: fadeInUp 1.2s ease-in;
+    }
+
+    #book p {
+      font-size: 16px;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      animation: fadeInUp 1.4s ease-in;
+    }
+
     /* Social Buttons */
     .social-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 25px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
       justify-content: center;
+      max-width: 600px;
+      margin: 0 auto;
+      animation: fadeInUp 1.6s ease-in;
     }
 
     .social-button {
       display: flex;
       align-items: center;
-      padding: 12px 28px;
+      justify-content: center;
+      padding: 12px 20px;
       color: white;
       text-decoration: none;
-      border-radius: 30px;
+      border-radius: 35px;
       font-weight: 500;
       font-size: 16px;
-      transition: background 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     }
 
     .whatsapp-button {
-      background: #25D366;
+      background: linear-gradient(45deg, #25D366, #20b558);
     }
 
     .facebook-button {
-      background: #3b5998;
+      background: linear-gradient(45deg, #3b5998, #2a4373);
     }
 
     .map-button {
-      background: #4682b4;
+      background: linear-gradient(45deg, #4682b4, #3a6b9a);
+    }
+
+    .download-button {
+      background: linear-gradient(45deg, #f28c38, #d67a30);
     }
 
     .social-button i {
       margin-right: 10px;
       font-size: 18px;
-    }
-
-    .whatsapp-button:hover {
-      background: #1ebe57;
-      transform: scale(1.08);
-    }
-
-    .facebook-button:hover {
-      background: #344e86;
-      transform: scale(1.08);
-    }
-
-    .map-button:hover {
-      background: #3a6b9a;
-      transform: scale(1.08);
     }
 
     /* Bottom Navigation */
@@ -567,6 +627,14 @@
       .staff-carousel {
         max-width: 500px;
       }
+
+      .social-buttons {
+        grid-template-columns: 1fr;
+      }
+
+      #book {
+        padding: 50px 15px;
+      }
     }
 
     @media (max-width: 480px) {
@@ -617,13 +685,19 @@
       }
 
       .social-buttons {
-        flex-direction: column;
+        grid-template-columns: 1fr;
       }
 
       .social-button {
-        width: 100%;
-        justify-content: center;
-        padding: 10px 20px;
+        padding: 10px 15px;
+      }
+
+      .contact-logo {
+        max-width: 140px;
+      }
+
+      #book h3 {
+        font-size: 26px;
       }
 
       .bottom-nav a {
@@ -683,6 +757,7 @@
   </nav>
 
   <section class="hero-section">
+    <img src="https://images.unsplash.com/photo-1592752932851-81c77a4f8d69?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Latar Belakang Rawatan Kecantikan" class="hero-background" loading="lazy" onload="this.parentElement.style.backgroundImage='url(' + this.src + ')';">
     <h2>Rawatan Kecantikan Eksklusif</h2>
     <p>Nikmati pengalaman kecantikan dan ketenangan terbaik di Malaysia.</p>
     <a href="#book" class="social-button whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> Tempah Sekarang</a>
@@ -702,21 +777,21 @@
     <p>Temui rangkaian produk kecantikan kami untuk kulit berseri.</p>
     <div class="product-grid">
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Serum Mencerahkan untuk Kulit Berseri" title="Serum Mencerahkan AR Beauty">
+        <img src="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Serum Mencerahkan untuk Kulit Berseri" title="Serum Mencerahkan AR Beauty" loading="lazy">
         <h4>Serum Mencerahkan</h4>
         <p>Serum vitamin C untuk kulit cerah dan sihat.</p>
         <div class="price">RM 89.90</div>
         <a href="https://wa.me/601114477190?text=Saya%20berminat%20dengan%20Serum%20Mencerahkan" class="order-button" aria-label="Order Serum Mencerahkan">Order Sekarang</a>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1617897664516-2f5e5e0e79c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Krim Pelembap untuk Kulit Lembut" title="Krim Pelembap AR Beauty">
+        <img src="https://images.unsplash.com/photo-1617897664516-2f5e5e0e79c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Krim Pelembap untuk Kulit Lembut" title="Krim Pelembap AR Beauty" loading="lazy">
         <h4>Krim Pelembap</h4>
         <p>Krim hidrat untuk kelembutan kulit maksimum.</p>
         <div class="price">RM 59.90</div>
         <a href="https://wa.me/601114477190?text=Saya%20berminat%20dengan%20Krim%20Pelembap" class="order-button" aria-label="Order Krim Pelembap">Order Sekarang</a>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1598440940744-3b9891b8d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Topeng Muka untuk Pembersihan Kulit" title="Topeng Muka AR Beauty">
+        <img src="https://images.unsplash.com/photo-1598440940744-3b9891b8d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Topeng Muka untuk Pembersihan Kulit" title="Topeng Muka AR Beauty" loading="lazy">
         <h4>Topeng Muka</h4>
         <p>Topeng lumpur untuk pembersihan mendalam.</p>
         <div class="price">RM 39.90</div>
@@ -728,7 +803,7 @@
   <section id="videos" class="section video-section">
     <h3>Video Petua Kecantikan</h3>
     <p>Tonton panduan kecantikan dan pameran perkhidmatan kami.</p>
-    <iframe src="https://www.youtube.com/embed/_y_eY4r2RDA" title="Panduan Penjagaan Kulit oleh AR Beauty" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/_y_eY4r2RDA" title="Panduan Penjagaan Kulit oleh AR Beauty" allowfullscreen loading="lazy"></iframe>
   </section>
 
   <section id="staff" class="section">
@@ -737,7 +812,7 @@
     <div class="staff-carousel">
       <div class="carousel-track">
         <div class="staff-card">
-          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Aisyah, Pakar Facial AR Beauty" title="Aisyah - Pakar Facial">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Aisyah, Pakar Facial AR Beauty" title="Aisyah - Pakar Facial" loading="lazy">
           <h4>Aisyah</h4>
           <p>Pakar facial dengan 5 tahun pengalaman dalam rawatan kulit.</p>
           <div class="staff-social-buttons">
@@ -746,7 +821,7 @@
           </div>
         </div>
         <div class="staff-card">
-          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Nur, Terapis Urutan AR Beauty" title="Nur - Terapis Urutan">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Nur, Terapis Urutan AR Beauty" title="Nur - Terapis Urutan" loading="lazy">
           <h4>Nur</h4>
           <p>Terapis urutan tradisional dan aromaterapi.</p>
           <div class="staff-social-buttons">
@@ -755,7 +830,7 @@
           </div>
         </div>
         <div class="staff-card">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Sofia, Spesialis Kuku AR Beauty" title="Sofia - Spesialis Kuku">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Sofia, Spesialis Kuku AR Beauty" title="Sofia - Spesialis Kuku" loading="lazy">
           <h4>Sofia</h4>
           <p>Spesialis rawatan kuku dan relaksasi.</p>
           <div class="staff-social-buttons">
@@ -806,12 +881,16 @@
   </section>
 
   <section id="book" class="section">
-    <h3>Hubungi Kami</h3>
-    <p>Hubungi kami melalui WhatsApp di <strong>+6011-14477190</strong>, Instagram <strong>@arbeautywellness</strong>, atau lawati kami.</p>
-    <div class="social-buttons">
-      <a href="https://wa.me/601114477190" class="social-button whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp Sekarang</a>
-      <a href="https://facebook.com/arbeautywellness" class="social-button facebook-button" aria-label="Hubungi melalui Facebook"><i class="fab fa-facebook-f"></i> Hubungi di Facebook</a>
-      <a href="https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8" class="social-button map-button" aria-label="Lihat Lokasi di Google Maps"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi</a>
+    <div class="contact-container">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Logo AR Beauty & Wellness Center" class="contact-logo" loading="lazy">
+      <h3>Hubungi Kami</h3>
+      <p>Hubungi kami melalui WhatsApp di <strong>+6011-14477190</strong>, Instagram <strong>@arbeautywellness</strong>, atau lawati kami.</p>
+      <div class="social-buttons">
+        <a href="https://wa.me/601114477190" class="social-button whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp Sekarang</a>
+        <a href="https://facebook.com/arbeautywellness" class="social-button facebook-button" aria-label="Hubungi melalui Facebook"><i class="fab fa-facebook-f"></i> Hubungi di Facebook</a>
+        <a href="https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8" class="social-button map-button" aria-label="Lihat Lokasi di Google Maps"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi</a>
+        <a href="https://www.arbeautywellness.com/brochure.pdf" class="social-button download-button" aria-label="Muat Turun Brosur" download><i class="fas fa-download"></i> Muat Turun Brosur</a>
+      </div>
     </div>
   </section>
 
