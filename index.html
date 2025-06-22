@@ -3,34 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AR Beauty & Wellness Center menawarkan rawatan kecantikan dan produk penjagaan kulit di Malaysia. Tempah temu janji anda sekarang!">
-  <meta name="keywords" content="rawatan kecantikan Malaysia, penjagaan kulit, facial eksklusif, urutan tradisional, AR Beauty">
+  <meta name="description" content="AR Beauty & Wellness Center menawarkan spa premium, rawatan bekam, urutan tradisional, dan penjagaan kulit di Malaysia. Tempah temu janji anda sekarang!">
+  <meta name="keywords" content="spa premium Malaysia, rawatan bekam, bekam kecantikan, urutan tradisional, tangas herba, rendam kaki, penjagaan kulit, AR Beauty">
   <meta name="author" content="AR Beauty & Wellness Center">
   <meta name="robots" content="index, follow">
   <!-- Open Graph untuk Media Sosial -->
-  <meta property="og:title" content="AR Beauty & Wellness Center - Rawatan Kecantikan di Malaysia">
-  <meta property="og:description" content="Nikmati rawatan kecantikan eksklusif dan produk penjagaan kulit di AR Beauty. Hubungi melalui WhatsApp untuk tempahan!">
+  <meta property="og:title" content="AR Beauty & Wellness Center - Spa Premium & Rawatan Bekam Malaysia">
+  <meta property="og:description" content="Nikmati rawatan spa eksklusif, bekam, urutan, dan produk kecantikan premium di AR Beauty. Hubungi +6014-3862897 untuk tempahan!">
   <meta property="og:image" content="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
   <meta property="og:url" content="https://www.arbeautywellness.com">
   <meta property="og:type" content="website">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AR Beauty & Wellness Center - Rawatan Kecantikan di Malaysia">
-  <meta name="twitter:description" content="Nikmati rawatan kecantikan eksklusif dan produk penjagaan kulit. Hubungi melalui WhatsApp!">
+  <meta name="twitter:title" content="AR Beauty & Wellness Center - Spa Premium & Rawatan Bekam Malaysia">
+  <meta name="twitter:description" content="Nikmati rawatan spa eksklusif, bekam, urutan, dan produk kecantikan premium. Hubungi +6014-3862897!">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
   <!-- Canonical Link -->
   <link rel="canonical" href="https://www.arbeautywellness.com">
-  <title>AR Beauty & Wellness Center - Rawatan Kecantikan Malaysia</title>
+  <title>AR Beauty & Wellness Center - Spa Premium & Rawatan Bekam Malaysia</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
   <style>
     /* Reset dan Gaya Asas */
     * {
@@ -125,49 +117,24 @@
 
     /* Hero Section */
     .hero-section {
-      position: relative;
+      background: linear-gradient(90deg, #dfe9f3, #f0f6fa);
       padding: 90px 20px;
       text-align: center;
-      color: white;
-      overflow: hidden;
-    }
-
-    .hero-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-      display: none; /* Sembunyikan imej dari paparan visual */
-    }
-
-    .hero-section::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6); /* Overlay lebih gelap */
-      z-index: 1;
-    }
-
-    .hero-section h2, .hero-section p, .hero-section a {
+      color: #333;
       position: relative;
-      z-index: 2;
     }
 
     .hero-section h2 {
       font-size: 34px;
       font-weight: 600;
+      color: #6b9ac4;
       margin-bottom: 12px;
       animation: fadeIn 1s ease-in;
     }
 
     .hero-section p {
       font-size: 17px;
+      color: #555;
       max-width: 600px;
       margin: 0 auto 20px;
       animation: fadeIn 1.3s ease-in;
@@ -207,196 +174,42 @@
     }
 
     .section ul li {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       list-style: none;
+      position: relative;
+      padding-left: 20px;
     }
 
     .section ul li::before {
       content: '✨';
-      margin-right: 8px;
+      position: absolute;
+      left: 0;
       color: #4682b4;
     }
 
-    /* Contact Section */
-    .contact-section {
-      background: linear-gradient(180deg, #f9fafc, #dfe9f3); /* Gradient lembut */
-      padding: 60px 20px;
+    /* Gaya untuk Sub-Butiran Harga */
+    .service-details {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 5px;
     }
 
-    .contact-logo {
-      display: block;
-      max-width: 200px;
-      height: auto;
-      margin: 0 auto 30px;
-      transition: transform 0.3s ease;
+    .service-details li {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 5px;
+      position: relative;
+      padding-left: 15px;
     }
 
-    .contact-logo:hover {
-      transform: scale(1.05);
-    }
-
-    .contact-info {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .contact-info p {
-      font-size: 17px;
-      color: #444;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .contact-info i {
-      margin-right: 8px;
+    .service-details li::before {
+      content: '▪';
+      position: absolute;
+      left: 0;
       color: #6b9ac4;
-      font-size: 18px;
-    }
-
-    .contact-buttons {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    /* Social Buttons */
-    .social-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 20px;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: 500;
-      font-size: 16px;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .whatsapp-button {
-      background: #25D366;
-    }
-
-    .facebook-button {
-      background: #3b5998;
-    }
-
-    .map-button {
-      background: #4682b4;
-    }
-
-    .download-button {
-      background: #f28c38;
-    }
-
-    .instagram-button {
-      background: #E1306C;
-    }
-
-    .social-button i {
-      margin-right: 10px;
-      font-size: 18px;
-    }
-
-    .whatsapp-button:hover {
-      background: #1ebe57;
-      transform: translateY(-3px);
-      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .facebook-button:hover {
-      background: #344e86;
-      transform: translateY(-3px);
-      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .map-button:hover {
-      background: #3a6b9a;
-      transform: translateY(-3px);
-      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .download-button:hover {
-      background: #d67a30;
-      transform: translateY(-3px);
-      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .instagram-button:hover {
-      background: #C13584;
-      transform: translateY(-3px);
-      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
     }
 
     /* Product Section */
-    .product-ad-carousel {
-      position: relative;
-      max-width: 800px;
-      margin: 25px auto;
-      overflow: hidden;
-      border-radius: 12px;
-    }
-
-    .product-ad-carousel .carousel-track {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .ad-card {
-      min-width: 100%;
-      text-align: center;
-      position: relative;
-    }
-
-    .ad-card img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 12px;
-      transition: opacity 0.3s ease;
-    }
-
-    .ad-card img:hover {
-      opacity: 0.9;
-    }
-
-    .ad-text {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(70, 130, 180, 0.8);
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 500;
-      text-align: center;
-      max-width: 80%;
-    }
-
-    .recommended-badge {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      background: #4682b4;
-      color: white;
-      padding: 5px 10px;
-      border-radius: 12px;
-      font-size: 14px;
-      font-weight: 500;
-      transition: transform 0.3s ease;
-    }
-
-    .recommended-badge:hover {
-      transform: scale(1.1);
-    }
-
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -411,7 +224,6 @@
       padding: 20px;
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      position: relative;
     }
 
     .product-card:hover {
@@ -468,42 +280,62 @@
       transform: scale(1.08);
     }
 
-    /* Video Section - Carousel */
+    /* Video Section */
     .video-section {
       text-align: center;
     }
 
-    .video-carousel {
-      position: relative;
-      max-width: 800px;
-      margin: 25px auto;
-      overflow: hidden;
-      border-radius: 12px;
-    }
-
-    .video-carousel .carousel-track {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .video-card {
-      min-width: 100%;
-      padding: 20px;
-      background: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    .video-card iframe {
+    .video-section iframe {
       width: 100%;
       max-width: 800px;
       height: 450px;
       border: none;
       border-radius: 12px;
-      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      margin-top: 20px;
     }
 
-    /* Carousel Navigation */
+    /* Staff Section - Carousel */
+    .staff-carousel {
+      position: relative;
+      max-width: 600px;
+      margin: 25px auto;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .staff-carousel .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .staff-card {
+      min-width: 100%;
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .staff-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 12px;
+    }
+
+    .staff-card h4 {
+      color: #6b9ac4;
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    .staff-card p {
+      color: #555;
+      font-size: 14px;
+    }
+
     .carousel-nav {
       position: absolute;
       top: 50%;
@@ -549,74 +381,6 @@
 
     .carousel-dot.active {
       background: #4682b4;
-    }
-
-    /* Staff Section - Carousel */
-    .staff-carousel {
-      position: relative;
-      max-width: 600px;
-      margin: 25px auto;
-      overflow: hidden;
-      border-radius: 12px;
-    }
-
-    .staff-carousel .carousel-track {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .staff-card {
-      min-width: 100%;
-      background: #fff;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .staff-card img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 12px;
-    }
-
-    .staff-social-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 10px;
-    }
-
-    .staff-social-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 30px;
-      height: 30px;
-      color: white;
-      text-decoration: none;
-      border-radius: 50%;
-      font-size: 16px;
-      transition: background 0.3s ease, transform 0.3s ease;
-    }
-
-    .tiktok-button {
-      background: #000000;
-    }
-
-    .instagram-button {
-      background: #E1306C;
-    }
-
-    .tiktok-button:hover {
-      background: #333333;
-      transform: scale(1.1);
-    }
-
-    .instagram-button:hover {
-      background: #C13584;
-      transform: scale(1.1);
     }
 
     /* Appointment Section */
@@ -665,6 +429,59 @@
     .appointment-form button:hover {
       background: #3a6b9a;
       transform: scale(1.05);
+    }
+
+    /* Social Buttons */
+    .social-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+      justify-content: center;
+    }
+
+    .social-button {
+      display: flex;
+      align-items: center;
+      padding: 12px 28px;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 16px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .whatsapp-button {
+      background: #25D366;
+    }
+
+    .facebook-button {
+      background: #3b5998;
+    }
+
+    .map-button {
+      background: #4682b4;
+    }
+
+    .social-button i {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    .whatsapp-button:hover {
+      background: #1ebe57;
+      transform: scale(1.08);
+    }
+
+    .facebook-button:hover {
+      background: #344e86;
+      transform: scale(1.08);
+    }
+
+    .map-button:hover {
+      background: #3a6b9a;
+      transform: scale(1.08);
     }
 
     /* Bottom Navigation */
@@ -717,10 +534,6 @@
         padding: 40px 15px;
       }
 
-      .contact-section {
-        padding: 50px 15px;
-      }
-
       .section h3 {
         font-size: 24px;
       }
@@ -733,21 +546,7 @@
         height: 140px;
       }
 
-      .ad-card img {
-        height: 250px;
-      }
-
-      .ad-text {
-        font-size: 14px;
-        padding: 8px 15px;
-      }
-
-      .recommended-badge {
-        font-size: 12px;
-        padding: 4px 8px;
-      }
-
-      .video-card iframe {
+      .video-section iframe {
         height: 350px;
       }
 
@@ -755,12 +554,8 @@
         max-width: 500px;
       }
 
-      .video-carousel, .product-ad-carousel {
-        max-width: 600px;
-      }
-
-      .contact-buttons {
-        grid-template-columns: 1fr;
+      .service-details li {
+        font-size: 14px;
       }
     }
 
@@ -785,60 +580,29 @@
         margin: 15px;
       }
 
-      .contact-section {
-        padding: 40px 15px;
-      }
-
-      .contact-logo {
-        max-width: 150px;
-      }
-
-      .contact-info p {
-        font-size: 16px;
-      }
-
       .product-grid {
         grid-template-columns: 1fr;
       }
 
       .product-card img, .staff-card img {
-        height: 100px;
+        height: 120px;
       }
 
-      .ad-card img {
-        height: 200px;
-      }
-
-      .ad-text {
-        font-size: 12px;
-        padding: 6px 12px;
-      }
-
-      .recommended-badge {
-        font-size: 10px;
-        padding: 3px 6px;
-      }
-
-      .video-card iframe {
+      .video-section iframe {
         height: 250px;
       }
 
-      .staff-carousel, .video-carousel, .product-ad-carousel {
+      .staff-carousel {
         max-width: 300px;
       }
 
-      .staff-social-buttons {
-        gap: 8px;
-      }
-
-      .staff-social-button {
-        width: 28px;
-        height: 28px;
-        font-size: 14px;
+      .social-buttons {
+        flex-direction: column;
       }
 
       .social-button {
         width: 100%;
+        justify-content: center;
         padding: 10px 20px;
       }
 
@@ -848,6 +612,10 @@
 
       .appointment-form {
         margin: 15px;
+      }
+
+      .service-details li {
+        font-size: 13px;
       }
     }
   </style>
@@ -859,8 +627,8 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "AR Beauty & Wellness Center",
-    "description": "Rawatan kecantikan di Malaysia, menawarkan facial eksklusif, urutan tradisional, dan produk penjagaan kulit.",
-    "telephone": "+6011-14477190",
+    "description": "Spa premium dan rawatan bekam di Malaysia, menawarkan bekam kecantikan, urutan tradisional, tangas herba, rendam kaki, dan produk penjagaan kulit.",
+    "telephone": "+6014-3862897",
     "url": "https://www.arbeautywellness.com",
     "address": {
       "@type": "PostalAddress",
@@ -870,12 +638,12 @@
     },
     "sameAs": [
       "https://facebook.com/arbeautywellness",
-      "https://wa.me/601114477190",
-      "https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8",
-      "https://instagram.com/arbeautywellness"
+      "https://wa.me/60143862897",
+      "https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8"
     ],
     "openingHours": [
-      "Mo-Su 09:00-20:00"
+      "Mo-Sa 10:00-20:00",
+      "Su 12:00-18:00"
     ]
   }
   </script>
@@ -887,155 +655,139 @@
 
   <nav class="sidebar" id="sidebar">
     <ul>
-      <li><a href="#home" title="Laman Utama">Laman Utama</a></li>
-      <li><a href="#services" title="Perkhidmatan Kecantikan">Perkhidmatan</a></li>
+      <li><a href="#home" title="Laman Utama Spa dan Bekam">Laman Utama</a></li>
+      <li><a href="#services" title="Senarai Perkhidmatan Bekam dan Spa">Perkhidmatan</a></li>
       <li><a href="#products" title="Produk Penjagaan Kulit">Produk</a></li>
-      <li><a href="#videos" title="Video Kecantikan">Video</a></li>
+      <li><a href="#videos" title="Video Kecantikan dan Bekam">Video</a></li>
       <li><a href="#staff" title="Pasukan Staf Profesional">Staf</a></li>
       <li><a href="#about" title="Tentang AR Beauty">Tentang Kami</a></li>
-      <li><a href="#appointment" title="Tempah Temu Janji">Tempah Temu Janji</a></li>
+      <li><a href="#appointment" title="Tempah Temu Janji Bekam dan Spa">Tempah Temu Janji</a></li>
       <li><a href="#book" title="Hubungi Kami">Hubungi</a></li>
     </ul>
   </nav>
 
   <section class="hero-section">
-    <img src="https://images.unsplash.com/photo-1592752932851-81c77a4f8d69?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Latar Belakang Rawatan Kecantikan" class="hero-background" loading="lazy" onload="this.parentElement.style.backgroundImage='url(' + this.src + ')';">
-    <h2>Rawatan Kecantikan Eksklusif</h2>
-    <p>Nikmati pengalaman kecantikan dan ketenangan terbaik di Malaysia.</p>
+    <h2>Spa Premium & Rawatan Bekam Eksklusif</h2>
+    <p>Nikmati pengalaman kecantikan dan kesihatan dengan bekam dan spa tradisional di Malaysia.</p>
     <a href="#book" class="social-button whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> Tempah Sekarang</a>
   </section>
 
   <section id="home" class="section">
-    <h3>Perkhidmatan Kami</h3>
+    <h3>Senarai Perkhidmatan & Harga</h3>
     <ul>
-      <li>Facial Eksklusif & Spa</li>
-      <li>Urutan Tradisional & Aromaterapi</li>
-      <li>Rawatan Kulit dan Relaksasi</li>
+      <li>Rendam + Urutan Kaki
+        <ul class="service-details">
+          <li>RM45 (50 minit)</li>
+          <li>RM55 (60 minit)</li>
+        </ul>
+      </li>
+      <li>Urutan Bahu & Kepala
+        <ul class="service-details">
+          <li>RM45 (45 minit)</li>
+        </ul>
+      </li>
+      <li>Urutan Badan
+        <ul class="service-details">
+          <li>RM80 (60 minit)</li>
+          <li>RM100 (90 minit)</li>
+        </ul>
+      </li>
+      <li>Rawatan Stress, Migrain Urut + Bekam Kepala
+        <ul class="service-details">
+          <li>RM80 / sesi</li>
+        </ul>
+      </li>
+      <li>Urut + Bekam Belakang
+        <ul class="service-details">
+          <li>RM70 / sesi</li>
+        </ul>
+      </li>
+      <li>Bekam Kecantikan
+        <ul class="service-details">
+          <li>RM50 / sesi</li>
+        </ul>
+      </li>
+      <li>Urut + Bekam Kaki
+        <ul class="service-details">
+          <li>RM50 / sesi</li>
+        </ul>
+      </li>
+      <li>Urut (Bekam Angin)
+        <ul class="service-details">
+          <li>RM60 / sesi</li>
+        </ul>
+      </li>
+      <li>Tangas Herba
+        <ul class="service-details">
+          <li>RM60 / sesi</li>
+        </ul>
+      </li>
+      <li>Ear Candle
+        <ul class="service-details">
+          <li>RM35 / sesi</li>
+        </ul>
+      </li>
+      <li>Rendam Kaki
+        <ul class="service-details">
+          <li>RM10 / sesi</li>
+        </ul>
+      </li>
     </ul>
   </section>
 
   <section id="products" class="section">
-    <h3>Produk Penjagaan Kulit</h3>
+    <h3>Produk Penjagaan Kulit Premium</h3>
     <p>Temui rangkaian produk kecantikan kami untuk kulit berseri.</p>
-    <div class="product-ad-carousel">
-      <div class="carousel-track">
-        <div class="ad-card">
-          <img src="https://images.unsplash.com/photo-1620916297290-7f8b4e7b18b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Iklan Produk Penjagaan Kulit AR Beauty" title="Promosi Serum Mencerahkan" loading="lazy">
-          <span class="recommended-badge">Disyorkan</span>
-          <div class="ad-text">Diskaun 20% Serum Mencerahkan!</div>
-        </div>
-        <div class="ad-card">
-          <img src="https://images.unsplash.com/photo-1620916569593-6b7c24560625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Iklan Krim Pelembap AR Beauty" title="Promosi Krim Pelembap" loading="lazy">
-          <div class="ad-text">Krim Pelembap untuk Kulit Lembut!</div>
-        </div>
-        <div class="ad-card">
-          <img src="https://images.unsplash.com/photo-1620916569630-6b7c24560626?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Iklan Topeng Muka AR Beauty" title="Promosi Topeng Muka" loading="lazy">
-          <div class="ad-text">Topeng Muka untuk Pembersihan Mendalam!</div>
-        </div>
-      </div>
-      <div class="carousel-nav">
-        <button class="prev" aria-label="Iklan Sebelumnya"><i class="fas fa-chevron-left"></i></button>
-        <button class="next" aria-label="Iklan Berikutnya"><i class="fas fa-chevron-right"></i></button>
-      </div>
-      <div class="carousel-dots">
-        <span class="carousel-dot active" aria-label="Iklan 1"></span>
-        <span class="carousel-dot" aria-label="Iklan 2"></span>
-        <span class="carousel-dot" aria-label="Iklan 3"></span>
-      </div>
-    </div>
     <div class="product-grid">
       <div class="product-card">
-        <span class="recommended-badge">Disyorkan</span>
-        <img src="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Serum Mencerahkan untuk Kulit Berseri" title="Serum Mencerahkan AR Beauty" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Serum Mencerahkan untuk Kulit Berseri" title="Serum Mencerahkan AR Beauty">
         <h4>Serum Mencerahkan</h4>
         <p>Serum vitamin C untuk kulit cerah dan sihat.</p>
         <div class="price">RM 89.90</div>
-        <a href="https://wa.me/601114477190?text=Saya%20berminat%20dengan%20Serum%20Mencerahkan" class="order-button" aria-label="Order Serum Mencerahkan">Order Sekarang</a>
+        <a href="https://wa.me/60143862897?text=Saya%20berminat%20dengan%20Serum%20Mencerahkan" class="order-button" aria-label="Order Serum Mencerahkan">Order Sekarang</a>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1617897664516-2f5e5e0e79c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Krim Pelembap untuk Kulit Lembut" title="Krim Pelembap AR Beauty" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1617897664516-2f5e5e0e79c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Krim Pelembap untuk Kulit Lembut" title="Krim Pelembap AR Beauty">
         <h4>Krim Pelembap</h4>
         <p>Krim hidrat untuk kelembutan kulit maksimum.</p>
         <div class="price">RM 59.90</div>
-        <a href="https://wa.me/601114477190?text=Saya%20berminat%20dengan%20Krim%20Pelembap" class="order-button" aria-label="Order Krim Pelembap">Order Sekarang</a>
+        <a href="https://wa.me/60143862897?text=Saya%20berminat%20dengan%20Krim%20Pelembap" class="order-button" aria-label="Order Krim Pelembap">Order Sekarang</a>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1598440940744-3b9891b8d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Topeng Muka untuk Pembersihan Kulit" title="Topeng Muka AR Beauty" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1598441560744-3b9891b8d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Topeng Muka untuk Pembersihan Kulit" title="Topeng Muka AR Beauty">
         <h4>Topeng Muka</h4>
         <p>Topeng lumpur untuk pembersihan mendalam.</p>
         <div class="price">RM 39.90</div>
-        <a href="https://wa.me/601114477190?text=Saya%20berminat%20dengan%20Topeng%20Muka" class="order-button" aria-label="Order Topeng Muka">Order Sekarang</a>
+        <a href="https://wa.me/60143862897?text=Saya%20berminat%20dengan%20Topeng%20Muka" class="order-button" aria-label="Order Topeng Muka">Order Sekarang</a>
       </div>
     </div>
   </section>
 
   <section id="videos" class="section video-section">
-    <h3>Video Petua Kecantikan</h3>
-    <p>Tonton panduan kecantikan dan pameran perkhidmatan kami.</p>
-    <div class="video-carousel">
-      <div class="carousel-track">
-        <div class="video-card">
-          <iframe src="https://www.youtube.com/embed/_y_eY4r2RDA" title="Panduan Penjagaan Kulit oleh AR Beauty" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="video-card">
-          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Petua Rawatan Facial Eksklusif AR Beauty" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="video-card">
-          <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk" title="Tutorial Urutan Aromaterapi AR Beauty" allowfullscreen loading="lazy"></iframe>
-        </div>
-      </div>
-      <div class="carousel-nav">
-        <button class="prev" aria-label="Video Sebelumnya"><i class="fas fa-chevron-left"></i></button>
-        <button class="next" aria-label="Video Berikutnya"><i class="fas fa-chevron-right"></i></button>
-      </div>
-      <div class="carousel-dots">
-        <span class="carousel-dot active" aria-label="Video 1"></span>
-        <span class="carousel-dot" aria-label="Video 2"></span>
-        <span class="carousel-dot" aria-label="Video 3"></span>
-      </div>
-    </div>
+    <h3>Video Petua Kecantikan dan Bekam</h3>
+    <p>Tonton panduan kecantikan dan pameran perkhidmatan bekam kami.</p>
+    <iframe src="https://www.youtube.com/embed/_y_eY4r2RDA" title="Panduan Penjagaan Kulit dan Bekam oleh AR Beauty" allowfullscreen></iframe>
   </section>
 
   <section id="staff" class="section">
     <h3>Pasukan Staf Profesional Kami</h3>
-    <p>Berkenalan dengan pakar kecantikan kami di AR Beauty.</p>
+    <p>Berkenalan dengan pakar kecantikan dan bekam kami di AR Beauty.</p>
     <div class="staff-carousel">
       <div class="carousel-track">
         <div class="staff-card">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Staf 1, Pakar Facial AR Beauty" title="Staf 1 - Pakar Facial" loading="lazy">
-          <h4>Staf 1</h4>
-          <p>Pakar facial dengan pengalaman luas dalam rawatan kulit sensitif.</p>
-          <div class="staff-social-buttons">
-            <a href="https://tiktok.com/@staf1_arbeauty" class="staff-social-button tiktok-button" aria-label="TikTok Staf 1" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://instagram.com/staf1_arbeauty" class="staff-social-button instagram-button" aria-label="Instagram Staf 1" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Aisyah, Pakar Bekam dan Facial AR Beauty" title="Aisyah - Pakar Bekam dan Facial">
+          <h4>Aisyah</h4>
+          <p>Pakar bekam dan facial dengan 5 tahun pengalaman.</p>
         </div>
         <div class="staff-card">
-          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Staf 2, Terapis Urutan AR Beauty" title="Staf 2 - Terapis Urutan" loading="lazy">
-          <h4>Staf 2</h4>
-          <p>Terapis urutan profesional dengan kepakaran dalam aromaterapi.</p>
-          <div class="staff-social-buttons">
-            <a href="https://tiktok.com/@staf2_arbeauty" class="staff-social-button tiktok-button" aria-label="TikTok Staf 2" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://instagram.com/staf2_arbeauty" class="staff-social-button instagram-button" aria-label="Instagram Staf 2" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
+          <img src="https://images.unsplash.com/photo-1534528741775-539b4a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Nur, Pakar Urutan dan Bekam AR Beauty" title="Nur - Pakar Urutan dan Bekam">
+          <h4>Nur</h4>
+          <p>Pakar urutan tradisional dan bekam angin.</p>
         </div>
         <div class="staff-card">
-          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Staf 3, Spesialis Kuku AR Beauty" title="Staf 3 - Spesialis Kuku" loading="lazy">
-          <h4>Staf 3</h4>
-          <p>Spesialis kuku dengan bakat dalam reka bentuk seni kuku moden.</p>
-          <div class="staff-social-buttons">
-            <a href="https://tiktok.com/@staf3_arbeauty" class="staff-social-button tiktok-button" aria-label="TikTok Staf 3" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://instagram.com/staf3_arbeauty" class="staff-social-button instagram-button" aria-label="Instagram Staf 3" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="staff-card">
-          <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Staf 4, Pakar Produk Kecantikan AR Beauty" title="Staf 4 - Pakar Produk Kecantikan" loading="lazy">
-          <h4>Staf 4</h4>
-          <p>Pakar produk kecantikan dengan pengetahuan mendalam tentang penjagaan kulit.</p>
-          <div class="staff-social-buttons">
-            <a href="https://tiktok.com/@staf4_arbeauty" class="staff-social-button tiktok-button" aria-label="TikTok Staf 4" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://instagram.com/staf4_arbeauty" class="staff-social-button instagram-button" aria-label="Instagram Staf 4" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
+          <img src="https://images.unsplash.com/photo-1517841900-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Sofia, Spesialis Tangas Herba AR Beauty" title="Sofia - Spesialis Tangas Herba">
+          <h4>Sofia</h4>
+          <p>Spesialis tangas herba dan rawatan relaksasi.</p>
         </div>
       </div>
       <div class="carousel-nav">
@@ -1046,19 +798,18 @@
         <span class="carousel-dot active" aria-label="Slaid 1"></span>
         <span class="carousel-dot" aria-label="Slaid 2"></span>
         <span class="carousel-dot" aria-label="Slaid 3"></span>
-        <span class="carousel-dot" aria-label="Slaid 4"></span>
       </div>
     </div>
   </section>
 
   <section id="about" class="section">
     <h3>Tentang AR Beauty</h3>
-    <p>AR Beauty & Wellness Center adalah destinasi kecantikan di Malaysia, menawarkan rawatan kecantikan profesional untuk ketenangan jiwa dan tubuh.</p>
+    <p>AR Beauty & Wellness Center adalah destinasi spa premium di Malaysia, menawarkan rawatan bekam, urutan tradisional, dan kecantikan untuk kesihatan dan ketenangan.</p>
   </section>
 
   <section id="appointment" class="section">
-    <h3>Tempah Temu Janji</h3>
-    <p>Isi borang untuk menempah sesi rawatan kecantikan anda.</p>
+    <h3>Tempah Temu Janji Bekam dan Spa</h3>
+    <p>Isi borang untuk menempah sesi rawatan bekam atau spa anda.</p>
     <form class="appointment-form" aria-label="Borang Tempahan Temu Janji">
       <label for="name">Nama Penuh:</label>
       <input type="text" id="name" name="name" placeholder="Masukkan nama anda" required aria-required="true">
@@ -1067,42 +818,50 @@
       <label for="date">Tarikh Temu Janji:</label>
       <input type="date" id="date" name="date" required aria-required="true">
       <label for="time">Masa Temu Janji:</label>
-      <input type="time" id="time" name="time" required aria-required="true">
+      <input type="time" id="time" name="time" />
       <label for="service">Jenis Perkhidmatan:</label>
       <select id="service" name="service" required aria-required="true">
         <option value="" disabled selected>Pilih perkhidmatan</option>
-        <option value="Facial & Spa">Facial & Spa</option>
-        <option value="Urutan Tradisional">Urutan Tradisional</option>
-        <option value="Rawatan Kuku">Rawatan Kuku</option>
-        <option value="Lain-lain">Lain-lain</option>
+        <option value="rendam_urut_kaki_50">Rendam + Urutan Kaki (50 minit, RM45)</option>
+        <option value="rendam_urut_kaki_60">Rendam + Urutan Kaki (60 minit, RM55)</option>
+        <option value="urut_bahu_kepala">Urutan Bahu & Kepala (45 minit, RM45)</option>
+        <option value="urut_badan_60">Urutan Badan (60 minit, RM80)</option>
+        <option value="urut_badan_90">Urutan Badan (90 minit, RM100)</option>
+        <option value="migrain_bekam_kepala">Rawatan Stress, Migrain Urut + Bekam Kepala (RM80)</option>
+        <option value="urut_bekam_belakang">Urut + Bekam Belakang (RM70)</option>
+        <option value="bekam_kecantikan">Bekam Kecantikan (RM50)</option>
+        <option value="urut_bekam_kaki">Urut + Bekam Kaki (RM50)</option>
+        <option value="bekam_angin">Urut (Bekam Angin) (RM60)</option>
+        <option value="tangas_herba">Tangas Herba (RM60)</option>
+        <option value="ear_candle">Ear Candle (RM35)</option>
+        <option value="rendam_kaki">Rendam Kaki (RM10)</option>
       </select>
-      <button type="submit" aria-label="Hantar Tempahan ke WhatsApp">Hantar Tempahan</button>
+      <button type="submit" aria-label="Hantar Tempahan">Hantar Tempahan</button>
     </form>
   </section>
 
-  <section id="book" class="section contact-section">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Logo AR Beauty & Wellness Center" class="contact-logo" loading="lazy">
+  <section id="book" class="section">
     <h3>Hubungi Kami</h3>
-    <div class="contact-info">
-      <p><i class="fas fa-clock"></i>Waktu Buka: 9:00 A.M - 8:00 P.M</p>
-    </div>
-    <div class="contact-buttons">
-      <a href="https://wa.me/601114477190" class="social-button whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp Sekarang</a>
+    <p>Hubungi kami melalui WhatsApp di <strong>+6014-3862897</strong>, Instagram <span>@arbeautywellness</span>, atau lawati spa kami.</p>
+    <div class="social-buttons">
+      <a href="https://wa.me/60143862897" class="social-button whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp Sekarang</a>
       <a href="https://facebook.com/arbeautywellness" class="social-button facebook-button" aria-label="Hubungi melalui Facebook"><i class="fab fa-facebook-f"></i> Hubungi di Facebook</a>
-      <a href="https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8" class="social-button map-button" aria-label="Lihat Lokasi di Google Maps"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi</a>
-      <a href="https://www.arbeautywellness.com/brochure.pdf" class="social-button download-button" aria-label="Muat Turun Brosur" download><i class="fas fa-download"></i> Muat Turun Brosur</a>
-      <a href="https://instagram.com/arbeautywellness" class="social-button instagram-button" aria-label="Ikuti di Instagram" target="_blank"><i class="fab fa-instagram"></i> Ikuti di Instagram</a>
+      <a href="https://maps.app.goo.gl/yUPXRUHcnRtXdCNc8" class="social-button map-button" aria-label="Lihat Lokasi di Google Maps"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi</a>
     </div>
   </section>
 
   <footer class="footer">
-    <p>© 2025 AR Beauty & Wellness Center. Rawatan Kecantikan di Malaysia.</p>
+    <p>© 2025 AR Beauty & Wellness Center. Spa Premium & Rawatan Bekam di Malaysia.</p>
   </footer>
 
   <nav class="bottom-nav" aria-label="Navigasi Bawah">
-    <a href="#home" title="Laman Utama"><i class="fas fa-home"></i></a>
+    <a href="#home" title="Laman Utama Spa dan Bekam"><i class="fas fa-home"></i></a>
+    <a href="#services" title="Senarai Perkhidmatan Bekam dan Spa"><i class="fas fa-spa"></i></a>
     <a href="#products" title="Produk Penjagaan Kulit"><i class="fas fa-shopping-bag"></i></a>
-    <a href="#appointment" title="Tempah Temu Janji"><i class="fas fa-calendar-check"></i></a>
+    <a href="#videos" title="Video Kecantikan dan Bekam"><i class="fas fa-video"></i></a>
+    <a href="#staff" title="Pasukan Staf Profesional"><i class="fas fa-users"></i></a>
+    <a href="#about" title="Tentang AR Beauty"><i class="fas fa-info-circle"></i></a>
+    <a href="#appointment" title="Tempah Temu Janji Bekam dan Spa"><i class="fas fa-calendar-check"></i></a>
     <a href="#book" title="Hubungi Kami"><i class="fas fa-calendar-alt"></i></a>
   </nav>
 
@@ -1110,36 +869,8 @@
     // Sidebar Toggle
     const menuIcon = document.querySelector('.menu-icon');
     const sidebar = document.querySelector('.sidebar');
-    let isInteracted = false;
-
-    // Auto open sidebar on page load
-    window.addEventListener('load', () => {
-      sidebar.classList.add('active');
-      setTimeout(() => {
-        if (!isInteracted) {
-          sidebar.classList.remove('active');
-        }
-      }, 5000); // Auto close after 5 seconds if no interaction
-    });
-
-    // Toggle sidebar manually
-    menuIcon.addEventListener('click', (e) => {
-      e.stopPropagation(); // Prevent click from triggering document click
+    menuIcon.addEventListener('click', () => {
       sidebar.classList.toggle('active');
-      isInteracted = true;
-    });
-
-    // Close sidebar when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!sidebar.contains(e.target) && !menuIcon.contains(e.target) && sidebar.classList.contains('active')) {
-        sidebar.classList.remove('active');
-        isInteracted = true;
-      }
-    });
-
-    // Prevent sidebar auto-close if user interacts with it
-    sidebar.addEventListener('click', () => {
-      isInteracted = true;
     });
 
     // Smooth Scroll
@@ -1150,177 +881,65 @@
           behavior: 'smooth'
         });
         sidebar.classList.remove('active');
-        isInteracted = true;
       });
     });
 
-    // Appointment Form - Hantar ke WhatsApp
+    // Appointment Form
     const form = document.querySelector('.appointment-form');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const name = document.getElementById('name').value;
-      const phone = document.getElementById('phone').value;
-      const date = document.getElementById('date').value;
-      const time = document.getElementById('time').value;
-      const service = document.getElementById('service').value;
-
-      const message = encodeURIComponent(
-        `Tempahan Temu Janji\nNama: ${name}\nTelefon: ${phone}\nTarikh: ${date}\nMasa: ${time}\nPerkhidmatan: ${service}`
-      );
-      const whatsappUrl = `https://wa.me/601114477190?text=${message}`;
-      
-      window.open(whatsappUrl, '_blank');
+      alert('Tempahan anda telah dihantar! Kami akan menghubungi anda melalui WhatsApp di +6014-3862897 untuk pengesahan.');
       form.reset();
     });
 
     // Staff Carousel
-    const staffTrack = document.querySelector('.staff-carousel .carousel-track');
-    const staffSlides = Array.from(staffTrack.children);
-    const staffNextButton = document.querySelector('.staff-carousel .next');
-    const staffPrevButton = document.querySelector('.staff-carousel .prev');
-    const staffDots = Array.from(document.querySelectorAll('.staff-carousel .carousel-dot'));
-    const staffSlideWidth = staffSlides[0].getBoundingClientRect().width;
-    let staffCurrentIndex = 0;
-    let staffAutoSlide = setInterval(staffNextSlide, 5000);
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel-nav .next');
+    const prevButton = document.querySelector('.carousel-nav .prev');
+    const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    let currentIndex = 0;
+    let autoSlide = setInterval(nextSlide, 5000);
 
-    function staffUpdateSlides() {
-      staffTrack.style.transform = `translateX(${-staffSlideWidth * staffCurrentIndex}px)`;
-      staffDots.forEach((dot, i) => dot.classList.toggle('active', i === staffCurrentIndex));
+    function updateSlides() {
+      track.style.transform = `translateX(${-slideWidth * currentIndex}px)`;
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
     }
 
-    function staffNextSlide() {
-      staffCurrentIndex = (staffCurrentIndex + 1) % staffSlides.length;
-      staffUpdateSlides();
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlides();
     }
 
-    function staffPrevSlide() {
-      staffCurrentIndex = (staffCurrentIndex - 1 + staffSlides.length) % staffSlides.length;
-      staffUpdateSlides();
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateSlides();
     }
 
-    staffNextButton.addEventListener('click', () => {
-      clearInterval(staffAutoSlide);
-      staffNextSlide();
-      staffAutoSlide = setInterval(staffNextSlide, 5000);
+    nextButton.addEventListener('click', () => {
+      clearInterval(autoSlide);
+      nextSlide();
+      autoSlide = setInterval(nextSlide, 5000);
     });
 
-    staffPrevButton.addEventListener('click', () => {
-      clearInterval(staffAutoSlide);
-      staffPrevSlide();
-      staffAutoSlide = setInterval(staffNextSlide, 5000);
+    prevButton.addEventListener('click', () => {
+      clearInterval(autoSlide);
+      prevSlide();
+      autoSlide = setInterval(nextSlide, 5000);
     });
 
-    staffDots.forEach((dot, i) => {
+    dots.forEach((dot, i) => {
       dot.addEventListener('click', () => {
-        clearInterval(staffAutoSlide);
-        staffCurrentIndex = i;
-        staffUpdateSlides();
-        staffAutoSlide = setInterval(staffNextSlide, 5000);
+        clearInterval(autoSlide);
+        currentIndex = i;
+        updateSlides();
+        autoSlide = setInterval(nextSlide, 5000);
       });
     });
 
-    staffSlides.forEach((slide, index) => {
-      slide.style.left = `${staffSlideWidth * index}px`;
-    });
-
-    // Video Carousel
-    const videoTrack = document.querySelector('.video-carousel .carousel-track');
-    const videoSlides = Array.from(videoTrack.children);
-    const videoNextButton = document.querySelector('.video-carousel .next');
-    const videoPrevButton = document.querySelector('.video-carousel .prev');
-    const videoDots = Array.from(document.querySelectorAll('.video-carousel .carousel-dot'));
-    const videoSlideWidth = videoSlides[0].getBoundingClientRect().width;
-    let videoCurrentIndex = 0;
-    let videoAutoSlide = setInterval(videoNextSlide, 5000);
-
-    function videoUpdateSlides() {
-      videoTrack.style.transform = `translateX(${-videoSlideWidth * videoCurrentIndex}px)`;
-      videoDots.forEach((dot, i) => dot.classList.toggle('active', i === videoCurrentIndex));
-    }
-
-    function videoNextSlide() {
-      videoCurrentIndex = (videoCurrentIndex + 1) % videoSlides.length;
-      videoUpdateSlides();
-    }
-
-    function videoPrevSlide() {
-      videoCurrentIndex = (videoCurrentIndex - 1 + videoSlides.length) % videoSlides.length;
-      videoUpdateSlides();
-    }
-
-    videoNextButton.addEventListener('click', () => {
-      clearInterval(videoAutoSlide);
-      videoNextSlide();
-      videoAutoSlide = setInterval(videoNextSlide, 5000);
-    });
-
-    videoPrevButton.addEventListener('click', () => {
-      clearInterval(videoAutoSlide);
-      videoPrevSlide();
-      videoAutoSlide = setInterval(videoNextSlide, 5000);
-    });
-
-    videoDots.forEach((dot, i) => {
-      dot.addEventListener('click', () => {
-        clearInterval(videoAutoSlide);
-        videoCurrentIndex = i;
-        videoUpdateSlides();
-        videoAutoSlide = setInterval(videoNextSlide, 5000);
-      });
-    });
-
-    videoSlides.forEach((slide, index) => {
-      slide.style.left = `${videoSlideWidth * index}px`;
-    });
-
-    // Product Ad Carousel
-    const adTrack = document.querySelector('.product-ad-carousel .carousel-track');
-    const adSlides = Array.from(adTrack.children);
-    const adNextButton = document.querySelector('.product-ad-carousel .next');
-    const adPrevButton = document.querySelector('.product-ad-carousel .prev');
-    const adDots = Array.from(document.querySelectorAll('.product-ad-carousel .carousel-dot'));
-    const adSlideWidth = adSlides[0].getBoundingClientRect().width;
-    let adCurrentIndex = 0;
-    let adAutoSlide = setInterval(adNextSlide, 5000);
-
-    function adUpdateSlides() {
-      adTrack.style.transform = `translateX(${-adSlideWidth * adCurrentIndex}px)`;
-      adDots.forEach((dot, i) => dot.classList.toggle('active', i === adCurrentIndex));
-    }
-
-    function adNextSlide() {
-      adCurrentIndex = (adCurrentIndex + 1) % adSlides.length;
-      adUpdateSlides();
-    }
-
-    function adPrevSlide() {
-      adCurrentIndex = (adCurrentIndex - 1 + adSlides.length) % adSlides.length;
-      adUpdateSlides();
-    }
-
-    adNextButton.addEventListener('click', () => {
-      clearInterval(adAutoSlide);
-      adNextSlide();
-      adAutoSlide = setInterval(adNextSlide, 5000);
-    });
-
-    adPrevButton.addEventListener('click', () => {
-      clearInterval(adAutoSlide);
-      adPrevSlide();
-      adAutoSlide = setInterval(adNextSlide, 5000);
-    });
-
-    adDots.forEach((dot, i) => {
-      dot.addEventListener('click', () => {
-        clearInterval(adAutoSlide);
-        adCurrentIndex = i;
-        adUpdateSlides();
-        adAutoSlide = setInterval(adNextSlide, 5000);
-      });
-    });
-
-    adSlides.forEach((slide, index) => {
-      slide.style.left = `${adSlideWidth * index}px`;
+    slides.forEach((slide, index) => {
+      slide.style.left = `${slideWidth * index}px`;
     });
   </script>
 </body>
