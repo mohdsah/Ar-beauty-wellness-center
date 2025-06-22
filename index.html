@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nikmati rawatan urutan refleksologi di Kundasang yang udaranya sejuk, nyaman dan menenangkan. Rasai kelegaan badan dan ketenangan minda dengan sentuhan terapi profesional di AR Beauty & Reflexology Center.">
+  <meta name="description" content="Nikmati rawatan urutan refleksologi di Kundasang yang udaranya sejuk, nyaman dan menenangkan. Rasai kelegaan badan dan ketenangan minda dengan sentuhan terapi profesional di AR Beauty & Wellness Center.">
   <meta name="keywords" content="spa refleksologi Kundasang, rawatan bekam, bekam kecantikan, urutan tradisional, tangas herba, rendam kaki, penjagaan kulit, AR Beauty">
-  <meta name="author" content="AR Beauty & Reflexology Center">
+  <meta name="author" content="AR Beauty & Wellness Center">
   <meta name="robots" content="index, follow">
   <!-- Open Graph untuk Media Sosial -->
-  <meta property="og:title" content="AR Beauty & Reflexology Center - SPA Refleksologi & Rawatan Bekam di Kundasang">
+  <meta property="og:title" content="AR Beauty & Wellness Center - SPA Refleksologi & Rawatan Bekam di Kundasang">
   <meta property="og:description" content="Nikmati rawatan urutan refleksologi di Kundasang yang sejuk dan nyaman. Hubungi +601170761676 untuk tempahan!">
   <meta property="og:image" content="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
   <meta property="og:url" content="https://www.arbeautywellness.com">
   <meta property="og:type" content="website">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AR Beauty & Reflexology Center - SPA Refleksologi & Rawatan Bekam di Kundasang">
+  <meta name="twitter:title" content="AR Beauty & Wellness Center - SPA Refleksologi & Rawatan Bekam di Kundasang">
   <meta name="twitter:description" content="Nikmati rawatan urutan refleksologi di Kundasang yang sejuk dan nyaman. Hubungi +601170761676!">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
   <!-- Canonical Link -->
   <link rel="canonical" href="https://www.arbeautywellness.com">
-  <title>AR Beauty & Reflexology Center - SPA Refleksologi & Rawatan Bekam di Kundasang</title>
+  <title>AR Beauty & Wellness Center - SPA Refleksologi & Rawatan Bekam di Kundasang</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
@@ -373,6 +373,49 @@
     .staff-card p {
       color: #555;
       font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .staff-social {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .staff-social-button {
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .staff-instagram-button {
+      background: #C13584;
+    }
+
+    .staff-tiktok-button {
+      background: #000000;
+    }
+
+    .staff-instagram-button:hover {
+      background: #ad2b75;
+      transform: scale(1.08);
+    }
+
+    .staff-tiktok-button:hover {
+      background: #333333;
+      transform: scale(1.08);
+    }
+
+    .staff-social-button i {
+      margin-right: 6px;
+      font-size: 16px;
     }
 
     .carousel-nav {
@@ -541,6 +584,35 @@
       transform: scale(1.08);
     }
 
+    /* Opening Hours */
+    .opening-hours {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #6b9ac4, #b3cde0);
+      border: 1px solid #4682b4;
+      border-radius: 12px;
+      padding: 15px;
+      margin: 20px 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      color: #333;
+      font-size: 16px;
+      font-weight: 500;
+      animation: fadeIn 1s ease-in;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .opening-hours:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .opening-hours i {
+      color: #4682b4;
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
     /* Bottom Navigation */
     .bottom-nav {
       position: fixed;
@@ -614,6 +686,24 @@
       .service-card .price-list li {
         font-size: 14px;
       }
+
+      .staff-social-button {
+        padding: 7px 14px;
+        font-size: 13px;
+      }
+
+      .staff-social-button i {
+        font-size: 14px;
+      }
+
+      .opening-hours {
+        font-size: 15px;
+        padding: 12px;
+      }
+
+      .opening-hours i {
+        font-size: 22px;
+      }
     }
 
     @media (max-width: 480px) {
@@ -675,6 +765,25 @@
       .service-card .price-list li {
         font-size: 13px;
       }
+
+      .staff-social {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .staff-social-button {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .opening-hours {
+        font-size: 14px;
+        padding: 12px;
+      }
+
+      .opening-hours i {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
@@ -684,8 +793,8 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "AR Beauty & Reflexology Center",
-    "description": "Nikmati rawatan urutan refleksologi di Kundasang yang udaranya sejuk, nyaman dan menenangkan. Rasai kelegaan badan dan ketenangan minda dengan sentuhan terapi profesional.",
+    "name": "AR Beauty & Wellness Center",
+    "description": "Nikmati rawatan urutan refleksologi di Kundasang yang udaranya sejuk, nyaman dan menenangkan. Rasai kelegaan badan dan ketenangan minda dengan sentuhan terapi profesional di AR Beauty & Wellness Center.",
     "telephone": "+601170761676",
     "url": "https://www.arbeautywellness.com",
     "address": {
@@ -701,14 +810,13 @@
       "https://maps.app.goo.gl/yUPXUAHcnUtXdNJc8"
     ],
     "openingHours": [
-      "Mo-Sa 10:00-20:00",
-      "Su 12:00-18:00"
+      "Mo-Su 09:00-20:00"
     ]
   }
   </script>
 
   <header class="mobile-header">
-    <h1>AR Beauty & Reflexology</h1>
+    <h1>AR Beauty & Wellness</h1>
     <div class="menu-icon" aria-label="Buka Menu"><i class="fas fa-bars"></i></div>
   </header>
 
@@ -718,7 +826,7 @@
       <li><a href="#services" title="Senarai Perkhidmatan Bekam dan Spa">Perkhidmatan</a></li>
       <li><a href="#products" title="Produk Penjagaan Kulit">Produk</a></li>
       <li><a href="#videos" title="Video Kecantikan dan Bekam">Video</a></li>
-      <li><a href="#staff" title="Pasukan Staf Profesional">Staf</a></li>
+      <li><a href="#staff" title="Staf Profesional">Staff</a></li>
       <li><a href="#about" title="Tentang AR Beauty">Tentang Kami</a></li>
       <li><a href="#appointment" title="Tempah Temu Janji Bekam dan Spa">Tempah Temu Janji</a></li>
       <li><a href="#book" title="Hubungi Kami">Hubungi</a></li>
@@ -727,7 +835,7 @@
 
   <section class="hero-section">
     <h2>SPA Reflexoligy & Rawatan Bekam Eksklusif</h2>
-    <p>Nikmati rawatan urutan refleksologi di Kundasang yang udaranya sejuk, nyaman dan menenangkan. Rasai kelegaan badan dan ketenangan minda dengan sentuhan terapi yang profesional di AR Beauty & Reflexology Center.</p>
+    <p>Nikmati rawatan urutan refleksologi di Kundasang yang udaranya sejuk, nyaman dan menenangkan. Rasai kelegaan badan dan ketenangan minda dengan sentuhan terapi yang profesional di AR Beauty & Wellness Center.</p>
     <a href="#book" class="social-button whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> Tempah Sekarang</a>
   </section>
 
@@ -735,7 +843,7 @@
     <h3>Senarai Perkhidmatan & Harga</h3>
     <div class="service-grid">
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1519415510236-71839e6a09d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Rendam dan Urutan Kaki di AR Beauty" title="Rendam dan Urutan Kaki">
+        <img src="https://images.unsplash.com/photo-1519415510236-71839e6a09d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Rendam dan Urutan Kaki di AR Beauty & Wellness Center" title="Rendam dan Urutan Kaki">
         <h4>Rendam + Urutan Kaki</h4>
         <ul class="price-list">
           <li>RM45 (50 minit)</li>
@@ -743,14 +851,14 @@
         </ul>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1519823558687-d6d08e81f68b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Urutan Bahu dan Kepala di AR Beauty" title="Urutan Bahu dan Kepala">
+        <img src="https://images.unsplash.com/photo-1519823558687-d6d08e81f68b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Urutan Bahu dan Kepala di AR Beauty & Wellness Center" title="Urutan Bahu dan Kepala">
         <h4>Urutan Bahu & Kepala</h4>
         <ul class="price-list">
           <li>RM45 (45 minit)</li>
         </ul>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1600334122420-3b69d5a9a4b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Urutan Badan di AR Beauty" title="Urutan Badan">
+        <img src="https://images.unsplash.com/photo-1600334122420-3b69d5a9a4b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Urutan Badan di AR Beauty & Wellness Center" title="Urutan Badan">
         <h4>Urutan Badan</h4>
         <ul class="price-list">
           <li>RM80 (60 minit)</li>
@@ -758,56 +866,56 @@
         </ul>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1616394584738-fc647dc1a8aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Rawatan Stress dan Bekam Kepala di AR Beauty" title="Rawatan Stress dan Bekam Kepala">
+        <img src="https://images.unsplash.com/photo-1616394584738-fc647dc1a8aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Rawatan Stress dan Bekam Kepala di AR Beauty & Wellness Center" title="Rawatan Stress dan Bekam Kepala">
         <h4>Rawatan Stress, Migrain Urut + Bekam Kepala</h4>
         <ul class="price-list">
           <li>RM80 / sesi</li>
         </ul>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1600334122420-3b69d5a9a4b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Urut dan Bekam Belakang di AR Beauty" title="Urut dan Bekam Belakang">
+        <img src="https://images.unsplash.com/photo-1600334122420-3b69d5a9a4b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Urut dan Bekam Belakang di AR Beauty & Wellness Center" title="Urut dan Bekam Belakang">
         <h4>Urut + Bekam Belakang</h4>
         <ul class="price-list">
           <li>RM70 / sesi</li>
         </ul>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Bekam Kecantikan di AR Beauty" title="Bekam Kecantikan">
+        <img src="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Bekam Kecantikan di AR Beauty & Wellness Center" title="Bekam Kecantikan">
         <h4>Bekam Kecantikan</h4>
         <ul class="price-list">
           <li>RM50 / sesi</li>
         </ul>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1519415510236-71839e6a09d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Urut dan Bekam Kaki di AR Beauty" title="Urut dan Bekam Kaki">
+        <img src="https://images.unsplash.com/photo-1519415510236-71839e6a09d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Urut dan Bekam Kaki di AR Beauty & Wellness Center" title="Urut dan Bekam Kaki">
         <h4>Urut + Bekam Kaki</h4>
         <ul class="price-list">
           <li>RM50 / sesi</li>
         </ul>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1600334122420-3b69d5a9a4b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Urut Bekam Angin di AR Beauty" title="Urut Bekam Angin">
+        <img src="https://images.unsplash.com/photo-1600334122420-3b69d5a9a4b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Urut Bekam Angin di AR Beauty & Wellness Center" title="Urut Bekam Angin">
         <h4>Urut (Bekam Angin)</h4>
         <ul class="price-list">
           <li>RM60 / sesi</li>
         </ul>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1519823558687-d6d08e81f68b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Tangas Herba di AR Beauty" title="Tangas Herba">
+        <img src="https://images.unsplash.com/photo-1519823558687-d6d08e81f68b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Tangas Herba di AR Beauty & Wellness Center" title="Tangas Herba">
         <h4>Tangas Herba</h4>
         <ul class="price-list">
           <li>RM60 / sesi</li>
         </ul>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1519823558687-d6d08e81f68b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Ear Candle di AR Beauty" title="Ear Candle">
+        <img src="https://images.unsplash.com/photo-1519823558687-d6d08e81f68b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Ear Candle di AR Beauty & Wellness Center" title="Ear Candle">
         <h4>Ear Candle</h4>
         <ul class="price-list">
           <li>RM35 / sesi</li>
         </ul>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1519415510236-71839e6a09d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Rendam Kaki di AR Beauty" title="Rendam Kaki">
+        <img src="https://images.unsplash.com/photo-1519415510236-71839e6a09d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Rendam Kaki di AR Beauty & Wellness Center" title="Rendam Kaki">
         <h4>Rendam Kaki</h4>
         <ul class="price-list">
           <li>RM10 / sesi</li>
@@ -821,21 +929,21 @@
     <p>Temui rangkaian produk kecantikan kami untuk kulit berseri.</p>
     <div class="product-grid">
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Serum Mencerahkan untuk Kulit Berseri" title="Serum Mencerahkan AR Beauty">
+        <img src="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Serum Mencerahkan untuk Kulit Berseri di AR Beauty & Wellness Center" title="Serum Mencerahkan AR Beauty & Wellness Center">
         <h4>Serum Mencerahkan</h4>
         <p>Serum vitamin C untuk kulit cerah dan sihat.</p>
         <div class="price">RM 89.90</div>
         <a href="https://wa.me/601170761676?text=Saya%20berminat%20dengan%20Serum%20Mencerahkan" class="order-button" aria-label="Order Serum Mencerahkan">Order Sekarang</a>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1617897664516-2f5e5e0e79c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Krim Pelembap untuk Kulit Lembut" title="Krim Pelembap AR Beauty">
+        <img src="https://images.unsplash.com/photo-1617897664516-2f5e5e0e79c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Krim Pelembap untuk Kulit Lembut di AR Beauty & Wellness Center" title="Krim Pelembap AR Beauty & Wellness Center">
         <h4>Krim Pelembap</h4>
         <p>Krim hidrat untuk kelembutan kulit maksimum.</p>
         <div class="price">RM 59.90</div>
         <a href="https://wa.me/601170761676?text=Saya%20berminat%20dengan%20Krim%20Pelembap" class="order-button" aria-label="Order Krim Pelembap">Order Sekarang</a>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1598440940744-3b9891b8d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Topeng Muka untuk Pembersihan Kulit" title="Topeng Muka AR Beauty">
+        <img src="https://images.unsplash.com/photo-1598440940744-3b9891b8d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Topeng Muka untuk Pembersihan Kulit di AR Beauty & Wellness Center" title="Topeng Muka AR Beauty & Wellness Center">
         <h4>Topeng Muka</h4>
         <p>Topeng lumpur untuk pembersihan mendalam.</p>
         <div class="price">RM 39.90</div>
@@ -847,28 +955,49 @@
   <section id="videos" class="section video-section">
     <h3>Video Petua Kecantikan dan Bekam</h3>
     <p>Tonton panduan kecantikan dan pameran perkhidmatan bekam kami.</p>
-    <iframe src="https://www.youtube.com/embed/_y_eY4r2RDA" title="Panduan Penjagaan Kulit dan Bekam oleh AR Beauty" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/_y_eY4r2RDA" title="Panduan Penjagaan Kulit dan Bekam oleh AR Beauty & Wellness Center" allowfullscreen></iframe>
   </section>
 
   <section id="staff" class="section">
-    <h3>Pasukan Staf Profesional Kami</h3>
-    <p>Berkenalan dengan pakar kecantikan dan bekam kami di AR Beauty.</p>
+    <h3>Staff</h3>
+    <p>Berkenalan dengan staf profesional kami di AR Beauty & Wellness Center.</p>
     <div class="staff-carousel">
       <div class="carousel-track">
         <div class="staff-card">
-          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Aisyah, Pakar Bekam dan Facial AR Beauty" title="Aisyah - Pakar Bekam dan Facial">
-          <h4>Aisyah</h4>
-          <p>Pakar bekam dan facial dengan 5 tahun pengalaman.</p>
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Atie Roula, Pakar Refleksologi di AR Beauty & Wellness Center" title="Atie Roula - Pakar Refleksologi">
+          <h4>Atie Roula</h4>
+          <p>Pakar refleksologi dengan pengalaman 5 tahun.</p>
+          <div class="staff-social">
+            <a href="https://instagram.com/atieroula" class="staff-social-button staff-instagram-button" aria-label="Instagram Atie Roula"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://tiktok.com/@atieroula" class="staff-social-button staff-tiktok-button" aria-label="TikTok Atie Roula"><i class="fab fa-tiktok"></i> TikTok</a>
+          </div>
         </div>
         <div class="staff-card">
-          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Nur, Pakar Urutan dan Bekam AR Beauty" title="Nur - Pakar Urutan dan Bekam">
-          <h4>Nur</h4>
-          <p>Pakar urutan tradisional dan bekam angin.</p>
+          <img src="https://images.unsplash.com/photo-153452874(Opens in a new tab)8741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Qiss, Pakar Bekam di AR Beauty & Wellness Center" title="Qiss - Pakar Bekam">
+          <h4>Qiss</h4>
+          <p>Pakar bekam dan urutan terapi.</p>
+          <div class="staff-social">
+            <a href="https://instagram.com/qiss_arbeauty" class="staff-social-button staff-instagram-button" aria-label="Instagram Qiss"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://tiktok.com/@qiss_arbeauty" class="staff-social-button staff-tiktok-button" aria-label="TikTok Qiss"><i class="fab fa-tiktok"></i> TikTok</a>
+          </div>
         </div>
         <div class="staff-card">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Sofia, Spesialis Tangas Herba AR Beauty" title="Sofia - Spesialis Tangas Herba">
-          <h4>Sofia</h4>
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Imma, Pakar Tangas Herba di AR Beauty & Wellness Center" title="Imma - Pakar Tangas Herba">
+          <h4>Imma</h4>
           <p>Spesialis tangas herba dan rawatan relaksasi.</p>
+          <div class="staff-social">
+            <a href="https://instagram.com/imma_arbeauty" class="staff-social-button staff-instagram-button" aria-label="Instagram Imma"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://tiktok.com/@imma_arbeauty" class="staff-social-button staff-tiktok-button" aria-label="TikTok Imma"><i class="fab fa-tiktok"></i> TikTok</a>
+          </div>
+        </div>
+        <div class="staff-card">
+          <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Jenn, Pakar Kecantikan di AR Beauty & Wellness Center" title="Jenn - Pakar Kecantikan">
+          <h4>Jenn</h4>
+          <p>Pakar kecantikan dan penjagaan kulit.</p>
+          <div class="staff-social">
+            <a href="https://instagram.com/jenn_arbeauty" class="staff-social-button staff-instagram-button" aria-label="Instagram Jenn"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://tiktok.com/@jenn_arbeauty" class="staff-social-button staff-tiktok-button" aria-label="TikTok Jenn"><i class="fab fa-tiktok"></i> TikTok</a>
+          </div>
         </div>
       </div>
       <div class="carousel-nav">
@@ -879,13 +1008,14 @@
         <span class="carousel-dot active" aria-label="Slaid 1"></span>
         <span class="carousel-dot" aria-label="Slaid 2"></span>
         <span class="carousel-dot" aria-label="Slaid 3"></span>
+        <span class="carousel-dot" aria-label="Slaid 4"></span>
       </div>
     </div>
   </section>
 
   <section id="about" class="section">
     <h3>Tentang AR Beauty</h3>
-    <p>AR Beauty & Reflexology Center adalah destinasi spa refleksologi di Kundasang, Malaysia, menawarkan rawatan bekam, urutan tradisional, dan kecantikan untuk kesihatan dan ketenangan.</p>
+    <p>Nikmati rawatan urutan refleksologi di Kundasang yang udaranya sejuk, nyaman dan menenangkan. Rasai kelegaan badan dan ketenangan minda dengan sentuhan terapi yang profesional di AR Beauty & Wellness Center. Tempat sempurna untuk merehatkan diri dan memanjakan tubuh selepas penat bekerja atau melancong!</p>
   </section>
 
   <section id="appointment" class="section">
@@ -924,6 +1054,10 @@
   <section id="book" class="section">
     <h3>Hubungi Kami</h3>
     <p>Hubungi kami melalui saluran berikut atau lawati spa kami.</p>
+    <div class="opening-hours" aria-label="Waktu Operasi AR Beauty & Wellness Center">
+      <i class="fas fa-clock"></i>
+      <span>Setiap Hari: 9:00 PAGI – 8:00 MALAM</span>
+    </div>
     <div class="social-buttons">
       <a href="https://wa.me/601170761676" class="social-button whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp Sekarang</a>
       <a href="tel:+601170761676" class="social-button phone-button" aria-label="Hubungi melalui Telefon"><i class="fas fa-phone"></i> Hubungi Sekarang</a>
@@ -934,7 +1068,7 @@
   </section>
 
   <footer class="footer">
-    <p>© 2025 AR Beauty & Reflexology Center. SPA Reflexoligy & Rawatan Bekam di Kundasang, Malaysia.</p>
+    <p>© 2025 AR Beauty & Wellness Center. SPA Refleksologi & Rawatan Bekam di Kundasang, Malaysia.</p>
   </footer>
 
   <nav class="bottom-nav" aria-label="Navigasi Bawah">
