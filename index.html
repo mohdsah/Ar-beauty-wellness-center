@@ -334,6 +334,36 @@
     }
 
     /* Product Section */
+    .product-ad-carousel {
+      position: relative;
+      max-width: 800px;
+      margin: 25px auto;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .product-ad-carousel .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .ad-card {
+      min-width: 100%;
+      text-align: center;
+    }
+
+    .ad-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: opacity 0.3s ease;
+    }
+
+    .ad-card img:hover {
+      opacity: 0.9;
+    }
+
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -404,19 +434,87 @@
       transform: scale(1.08);
     }
 
-    /* Video Section */
+    /* Video Section - Carousel */
     .video-section {
       text-align: center;
     }
 
-    .video-section iframe {
+    .video-carousel {
+      position: relative;
+      max-width: 800px;
+      margin: 25px auto;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .video-carousel .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .video-card {
+      min-width: 100%;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .video-card iframe {
       width: 100%;
       max-width: 800px;
       height: 450px;
       border: none;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      margin-top: 20px;
+      margin: 0 auto;
+    }
+
+    /* Carousel Navigation */
+    .carousel-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+
+    .carousel-nav button {
+      background: #4682b4;
+      color: white;
+      border: none;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .carousel-nav button:hover {
+      background: #3a6b9a;
+      transform: scale(1.1);
+    }
+
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+      background: #dfe9f3;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .carousel-dot.active {
+      background: #4682b4;
     }
 
     /* Staff Section - Carousel */
@@ -485,53 +583,6 @@
     .instagram-button:hover {
       background: #C13584;
       transform: scale(1.1);
-    }
-
-    .carousel-nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 10px;
-    }
-
-    .carousel-nav button {
-      background: #4682b4;
-      color: white;
-      border: none;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      font-size: 18px;
-      cursor: pointer;
-      transition: background 0.3s ease, transform 0.3s ease;
-    }
-
-    .carousel-nav button:hover {
-      background: #3a6b9a;
-      transform: scale(1.1);
-    }
-
-    .carousel-dots {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 15px;
-    }
-
-    .carousel-dot {
-      width: 8px;
-      height: 8px;
-      background: #dfe9f3;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .carousel-dot.active {
-      background: #4682b4;
     }
 
     /* Appointment Section */
@@ -648,12 +699,20 @@
         height: 140px;
       }
 
-      .video-section iframe {
+      .ad-card img {
+        height: 250px;
+      }
+
+      .video-card iframe {
         height: 350px;
       }
 
       .staff-carousel {
         max-width: 500px;
+      }
+
+      .video-carousel, .product-ad-carousel {
+        max-width: 600px;
       }
 
       .contact-buttons {
@@ -702,11 +761,15 @@
         height: 120px;
       }
 
-      .video-section iframe {
+      .ad-card img {
+        height: 200px;
+      }
+
+      .video-card iframe {
         height: 250px;
       }
 
-      .staff-carousel {
+      .staff-carousel, .video-carousel, .product-ad-carousel {
         max-width: 300px;
       }
 
@@ -794,12 +857,34 @@
       <li>Facial Eksklusif & Spa</li>
       <li>Urutan Tradisional & Aromaterapi</li>
       <li>Rawatan Kulit dan Relaksasi</li>
-   .uri>
+    </ul>
   </section>
 
   <section id="products" class="section">
     <h3>Produk Penjagaan Kulit</h3>
     <p>Temui rangkaian produk kecantikan kami untuk kulit berseri.</p>
+    <div class="product-ad-carousel">
+      <div class="carousel-track">
+        <div class="ad-card">
+          <img src="https://images.unsplash.com/photo-1620916297290-7f8b4e7b18b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Iklan Produk Penjagaan Kulit AR Beauty" title="Promosi Serum Mencerahkan" loading="lazy">
+        </div>
+        <div class="ad-card">
+          <img src="https://images.unsplash.com/photo-1620916569593-6b7c24560625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Iklan Krim Pelembap AR Beauty" title="Promosi Krim Pelembap" loading="lazy">
+        </div>
+        <div class="ad-card">
+          <img src="https://images.unsplash.com/photo-1620916569630-6b7c24560626?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Iklan Topeng Muka AR Beauty" title="Promosi Topeng Muka" loading="lazy">
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <button class="prev" aria-label="Iklan Sebelumnya"><i class="fas fa-chevron-left"></i></button>
+        <button class="next" aria-label="Iklan Berikutnya"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="carousel-dots">
+        <span class="carousel-dot active" aria-label="Iklan 1"></span>
+        <span class="carousel-dot" aria-label="Iklan 2"></span>
+        <span class="carousel-dot" aria-label="Iklan 3"></span>
+      </div>
+    </div>
     <div class="product-grid">
       <div class="product-card">
         <img src="https://images.unsplash.com/photo-1624969862644-6404055c1b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Serum Mencerahkan untuk Kulit Berseri" title="Serum Mencerahkan AR Beauty" loading="lazy">
@@ -828,7 +913,28 @@
   <section id="videos" class="section video-section">
     <h3>Video Petua Kecantikan</h3>
     <p>Tonton panduan kecantikan dan pameran perkhidmatan kami.</p>
-    <iframe src="https://www.youtube.com/embed/_y_eY4r2RDA" title="Panduan Penjagaan Kulit oleh AR Beauty" allowfullscreen loading="lazy"></iframe>
+    <div class="video-carousel">
+      <div class="carousel-track">
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/_y_eY4r2RDA" title="Panduan Penjagaan Kulit oleh AR Beauty" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Petua Rawatan Facial Eksklusif AR Beauty" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk" title="Tutorial Urutan Aromaterapi AR Beauty" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <button class="prev" aria-label="Video Sebelumnya"><i class="fas fa-chevron-left"></i></button>
+        <button class="next" aria-label="Video Berikutnya"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="carousel-dots">
+        <span class="carousel-dot active" aria-label="Video 1"></span>
+        <span class="carousel-dot" aria-label="Video 2"></span>
+        <span class="carousel-dot" aria-label="Video 3"></span>
+      </div>
+    </div>
   </section>
 
   <section id="staff" class="section">
@@ -970,53 +1076,153 @@
     });
 
     // Staff Carousel
-    const track = document.querySelector('.carousel-track');
-    const slides = Array.from(track.children);
-    const nextButton = document.querySelector('.carousel-nav .next');
-    const prevButton = document.querySelector('.carousel-nav .prev');
-    const dots = Array.from(document.querySelectorAll('.carousel-dot'));
-    const slideWidth = slides[0].getBoundingClientRect().width;
-    let currentIndex = 0;
-    let autoSlide = setInterval(nextSlide, 5000);
+    const staffTrack = document.querySelector('.staff-carousel .carousel-track');
+    const staffSlides = Array.from(staffTrack.children);
+    const staffNextButton = document.querySelector('.staff-carousel .next');
+    const staffPrevButton = document.querySelector('.staff-carousel .prev');
+    const staffDots = Array.from(document.querySelectorAll('.staff-carousel .carousel-dot'));
+    const staffSlideWidth = staffSlides[0].getBoundingClientRect().width;
+    let staffCurrentIndex = 0;
+    let staffAutoSlide = setInterval(staffNextSlide, 5000);
 
-    function updateSlides() {
-      track.style.transform = `translateX(${-slideWidth * currentIndex}px)`;
-      dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
+    function staffUpdateSlides() {
+      staffTrack.style.transform = `translateX(${-staffSlideWidth * staffCurrentIndex}px)`;
+      staffDots.forEach((dot, i) => dot.classList.toggle('active', i === staffCurrentIndex));
     }
 
-    function nextSlide() {
-      currentIndex = (currentIndex + 1) % slides.length;
-      updateSlides();
+    function staffNextSlide() {
+      staffCurrentIndex = (staffCurrentIndex + 1) % staffSlides.length;
+      staffUpdateSlides();
     }
 
-    function prevSlide() {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      updateSlides();
+    function staffPrevSlide() {
+      staffCurrentIndex = (staffCurrentIndex - 1 + staffSlides.length) % staffSlides.length;
+      staffUpdateSlides();
     }
 
-    nextButton.addEventListener('click', () => {
-      clearInterval(autoSlide);
-      nextSlide();
-      autoSlide = setInterval(nextSlide, 5000);
+    staffNextButton.addEventListener('click', () => {
+      clearInterval(staffAutoSlide);
+      staffNextSlide();
+      staffAutoSlide = setInterval(staffNextSlide, 5000);
     });
 
-    prevButton.addEventListener('click', () => {
-      clearInterval(autoSlide);
-      prevSlide();
-      autoSlide = setInterval(nextSlide, 5000);
+    staffPrevButton.addEventListener('click', () => {
+      clearInterval(staffAutoSlide);
+      staffPrevSlide();
+      staffAutoSlide = setInterval(staffNextSlide, 5000);
     });
 
-    dots.forEach((dot, i) => {
+    staffDots.forEach((dot, i) => {
       dot.addEventListener('click', () => {
-        clearInterval(autoSlide);
-        currentIndex = i;
-        updateSlides();
-        autoSlide = setInterval(nextSlide, 5000);
+        clearInterval(staffAutoSlide);
+        staffCurrentIndex = i;
+        staffUpdateSlides();
+        staffAutoSlide = setInterval(staffNextSlide, 5000);
       });
     });
 
-    slides.forEach((slide, index) => {
-      slide.style.left = `${slideWidth * index}px`;
+    staffSlides.forEach((slide, index) => {
+      slide.style.left = `${staffSlideWidth * index}px`;
+    });
+
+    // Video Carousel
+    const videoTrack = document.querySelector('.video-carousel .carousel-track');
+    const videoSlides = Array.from(videoTrack.children);
+    const videoNextButton = document.querySelector('.video-carousel .next');
+    const videoPrevButton = document.querySelector('.video-carousel .prev');
+    const videoDots = Array.from(document.querySelectorAll('.video-carousel .carousel-dot'));
+    const videoSlideWidth = videoSlides[0].getBoundingClientRect().width;
+    let videoCurrentIndex = 0;
+    let videoAutoSlide = setInterval(videoNextSlide, 5000);
+
+    function videoUpdateSlides() {
+      videoTrack.style.transform = `translateX(${-videoSlideWidth * videoCurrentIndex}px)`;
+      videoDots.forEach((dot, i) => dot.classList.toggle('active', i === videoCurrentIndex));
+    }
+
+    function videoNextSlide() {
+      videoCurrentIndex = (videoCurrentIndex + 1) % videoSlides.length;
+      videoUpdateSlides();
+    }
+
+    function videoPrevSlide() {
+      videoCurrentIndex = (videoCurrentIndex - 1 + videoSlides.length) % videoSlides.length;
+      videoUpdateSlides();
+    }
+
+    videoNextButton.addEventListener('click', () => {
+      clearInterval(videoAutoSlide);
+      videoNextSlide();
+      videoAutoSlide = setInterval(videoNextSlide, 5000);
+    });
+
+    videoPrevButton.addEventListener('click', () => {
+      clearInterval(videoAutoSlide);
+      videoPrevSlide();
+      videoAutoSlide = setInterval(videoNextSlide, 5000);
+    });
+
+    videoDots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        clearInterval(videoAutoSlide);
+        videoCurrentIndex = i;
+        videoUpdateSlides();
+        videoAutoSlide = setInterval(videoNextSlide, 5000);
+      });
+    });
+
+    videoSlides.forEach((slide, index) => {
+      slide.style.left = `${videoSlideWidth * index}px`;
+    });
+
+    // Product Ad Carousel
+    const adTrack = document.querySelector('.product-ad-carousel .carousel-track');
+    const adSlides = Array.from(adTrack.children);
+    const adNextButton = document.querySelector('.product-ad-carousel .next');
+    const adPrevButton = document.querySelector('.product-ad-carousel .prev');
+    const adDots = Array.from(document.querySelectorAll('.product-ad-carousel .carousel-dot'));
+    const adSlideWidth = adSlides[0].getBoundingClientRect().width;
+    let adCurrentIndex = 0;
+    let adAutoSlide = setInterval(adNextSlide, 5000);
+
+    function adUpdateSlides() {
+      adTrack.style.transform = `translateX(${-adSlideWidth * adCurrentIndex}px)`;
+      adDots.forEach((dot, i) => dot.classList.toggle('active', i === adCurrentIndex));
+    }
+
+    function adNextSlide() {
+      adCurrentIndex = (adCurrentIndex + 1) % adSlides.length;
+      adUpdateSlides();
+    }
+
+    function adPrevSlide() {
+      adCurrentIndex = (adCurrentIndex - 1 + adSlides.length) % adSlides.length;
+      adUpdateSlides();
+    }
+
+    adNextButton.addEventListener('click', () => {
+      clearInterval(adAutoSlide);
+      adNextSlide();
+      adAutoSlide = setInterval(adNextSlide, 5000);
+    });
+
+    adPrevButton.addEventListener('click', () => {
+      clearInterval(adAutoSlide);
+      adPrevSlide();
+      adAutoSlide = setInterval(adNextSlide, 5000);
+    });
+
+    adDots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        clearInterval(adAutoSlide);
+        adCurrentIndex = i;
+        adUpdateSlides();
+        adAutoSlide = setInterval(adNextSlide, 5000);
+      });
+    });
+
+    adSlides.forEach((slide, index) => {
+      slide.style.left = `${adSlideWidth * index}px`;
     });
   </script>
 </body>
