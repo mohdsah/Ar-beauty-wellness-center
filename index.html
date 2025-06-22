@@ -117,27 +117,52 @@
 
     /* Hero Section */
     .hero-section {
-      background: linear-gradient(90deg, #dfe9f3, #f0f6fa);
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
       padding: 90px 20px;
       text-align: center;
-      color: #333;
+      color: #fff;
       position: relative;
     }
 
     .hero-section h2 {
       font-size: 34px;
       font-weight: 600;
-      color: #6b9ac4;
+      color: #fff;
       margin-bottom: 12px;
       animation: fadeIn 1s ease-in;
     }
 
     .hero-section p {
       font-size: 17px;
-      color: #555;
+      color: #e0e0e0;
       max-width: 700px;
       margin: 0 auto 20px;
       animation: fadeIn 1.3s ease-in;
+    }
+
+    .hero-section .whatsapp-button {
+      background: #25D366;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .hero-section .whatsapp-button:hover {
+      background: #1ebe57;
+      transform: scale(1.08);
+    }
+
+    .hero-section .whatsapp-button i {
+      margin-right: 10px;
+      font-size: 18px;
     }
 
     /* Section Umum */
@@ -229,23 +254,6 @@
       position: absolute;
       left: 0;
       color: #4682b4;
-    }
-
-    .service-card .book-button {
-      display: inline-block;
-      padding: 10px 22px;
-      background: #4682b4;
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      font-size: 15px;
-      font-weight: 500;
-      transition: background 0.3s ease, transform 0.3s ease;
-    }
-
-    .service-card .book-button:hover {
-      background: #3a6b9a;
-      transform: scale(1.08);
     }
 
     /* Product Section */
@@ -651,6 +659,10 @@
 
     /* Responsif */
     @media (max-width: 768px) {
+      .hero-section {
+        padding: 70px 15px;
+      }
+
       .hero-section h2 {
         font-size: 30px;
       }
@@ -722,6 +734,15 @@
       .hero-section p {
         font-size: 15px;
         max-width: 100%;
+      }
+
+      .hero-section .whatsapp-button {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+
+      .hero-section .whatsapp-button i {
+        font-size: 16px;
       }
 
       .section {
@@ -836,7 +857,7 @@
   <section class="hero-section">
     <h2>SPA Reflexoligy & Rawatan Bekam Eksklusif</h2>
     <p>Nikmati rawatan urutan refleksologi di Kundasang yang udaranya sejuk, nyaman dan menenangkan. Rasai kelegaan badan dan ketenangan minda dengan sentuhan terapi yang profesional di AR Beauty & Wellness Center.</p>
-    <a href="#book" class="social-button whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> Tempah Sekarang</a>
+    <a href="#book" class="whatsapp-button" aria-label="Hubungi melalui WhatsApp"><i class="fab fa-whatsapp"></i> Tempah Sekarang</a>
   </section>
 
   <section id="home" class="section">
